@@ -7,7 +7,7 @@ class Dog extends Model {
         return $this->belongsTo('User');
     }
 
-    public function reservations()
+    public function reservation()
     {
         return $this->hasOne('Reservation');
     }
