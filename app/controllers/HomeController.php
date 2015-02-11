@@ -44,17 +44,17 @@ class HomeController extends BaseController {
 		return View::make('login');
 	}
 
-	public function doLogin(){
-		$email = Input::get('email');
-		$password = Input::get('password');
+	// public function doLogin(){
+	// 	$email = Input::get('email');
+	// 	$password = Input::get('password');
 
-		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
-    		Session::flash('successMessage', "You've logged in!");
-    		// need to change..... return Redirect::intended('/');
-		} else {
-	   		Session::flash('errorMessage', 'Failed to log in');
-	   		// return Redirect::action(' HomeController@showLogin');
-		}
+	// 	if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+ //    		Session::flash('successMessage', "You've logged in!");
+ //    		// need to change..... return Redirect::intended('/');
+	// 	} else {
+	//    		Session::flash('errorMessage', 'Failed to log in');
+	//    		// return Redirect::action(' HomeController@showLogin');
+	// 	}
 
 
 	public function search()
