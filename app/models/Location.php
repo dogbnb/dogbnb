@@ -1,6 +1,8 @@
 <?php
 
-class Location extends Model {
+class Location extends Eloquent {
+
+    protected $table = 'locations';
 
     public function user()
     {
