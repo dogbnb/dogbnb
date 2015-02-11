@@ -15,7 +15,12 @@ class CreateDogsTable extends Migration {
 		Schema::create('dogs', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('dog_name', 50);
+			$table->string('dog_size', 6);
 			$table->timestamps();
+
+			$table->integer('user_id')->unsigned();
+			$table->foreign('user_id')->references('id')->on('users');
 		});
 	}
 
@@ -27,6 +32,9 @@ class CreateDogsTable extends Migration {
 	 */
 	public function down()
 	{
+		Schema::table('dogs', function($table){
+			$table->dropForeign('dogs_user_id_foreign');
+		});
 		Schema::drop('dogs');
 	}
 
