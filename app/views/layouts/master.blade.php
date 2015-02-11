@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 
-	<title>Rover Sleepover</title>
 </head>
 <body>
 

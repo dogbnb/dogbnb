@@ -15,3 +15,24 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+
+Route::get('createreservation', 'HomeController@createreservation');
+
+Route::get('createprofile', 'HomeController@createprofile');
+
+Route::get('editprofile', 'HomeController@editprofile');
+
+Route::get('index', 'HomeController@index');
+
+Route::get('login', 'HomeController@login');
+
+Route::get('search', 'HomeController@search');
+
+Route::get('signup', 'HomeController@signup');
+
+
+
+
+
+
