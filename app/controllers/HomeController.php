@@ -20,4 +20,51 @@ class HomeController extends BaseController {
 		return View::make('hello');
 	}
 
+	public function createprofile()
+	{
+		return View::make('createprofile');
+	}
+	
+	public function createreservation()
+	{
+		return View::make('createreservation');
+	}
+	public function editprofile()
+	{
+		return View::make('editprofile');
+	}
+	
+	public function index()
+	{
+		return View::make('index');
+	}
+
+	public function showlogin()
+	{
+		return View::make('login');
+	}
+
+	public function doLogin(){
+		$email = Input::get('email');
+		$password = Input::get('password');
+
+		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+    		Session::flash('successMessage', "You've logged in!");
+    		// need to change..... return Redirect::intended('/');
+		} else {
+	   		Session::flash('errorMessage', 'Failed to log in');
+	   		// return Redirect::action(' HomeController@showLogin');
+		}
+
+
+	public function search()
+	{
+		return View::make('search');
+	}
+
+	public function signup()
+	{
+		return View::make('signup');
+	}
+
 }
