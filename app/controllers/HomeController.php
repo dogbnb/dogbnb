@@ -22,26 +22,26 @@ class HomeController extends BaseController {
 
 	public function createprofile()
 	{
-		return View::make('layouts.createprofile');
+		return View::make('createprofile');
 	}
 	
 	public function createreservation()
 	{
-		return View::make('layouts.createreservation');
+		return View::make('createreservation');
 	}
 	public function editprofile()
 	{
-		return View::make('layouts.editprofile');
+		return View::make('editprofile');
 	}
 	
 	public function index()
 	{
-		return View::make('layouts.index');
+		return View::make('index');
 	}
 
 	public function showlogin()
 	{
-		return View::make('layouts.login');
+		return View::make('login');
 	}
 
 	public function doLogin(){
@@ -50,21 +50,21 @@ class HomeController extends BaseController {
 
 		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
     		Session::flash('successMessage', "You've logged in!");
-    		return Redirect::intended('/');
+    		// need to change..... return Redirect::intended('/');
 		} else {
 	   		Session::flash('errorMessage', 'Failed to log in');
-	   		// return Redirect::action(' Example : HomeController@showLogin');
+	   		// return Redirect::action(' HomeController@showLogin');
 		}
 
 
 	public function search()
 	{
-		return View::make('layouts.search');
+		return View::make('search');
 	}
 
 	public function signup()
 	{
-		return View::make('layouts.signup');
+		return View::make('signup');
 	}
 
 }
