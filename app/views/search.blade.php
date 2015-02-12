@@ -6,7 +6,8 @@
 	<title>Search</title>
 </head>
 <body>
-
+//show all users
+//show google map
 </body>
 </html>
 
