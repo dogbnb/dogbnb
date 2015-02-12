@@ -1,6 +1,6 @@
 <?php
 
-class Reservation extends Model {
+class Reservation extends Eloquent {
 
     public function dog()
     {

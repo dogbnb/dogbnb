@@ -1,6 +1,8 @@
 <?php
 
-class Dog extends Model {
+class Dog extends Eloquent {
+
+        protected $table = 'dogs';
 
     public function user()
     {
