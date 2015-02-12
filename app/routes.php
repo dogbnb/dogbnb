@@ -31,6 +31,14 @@ Route::get('search', 'HomeController@search');
 
 Route::get('signup', 'HomeController@signup');
 
+Route::get('/upload', function(){
+
+	return View::make('upload');
+});
+
+Route::post('/upload', 'HomeController@upload');
+
+
 
 
 
