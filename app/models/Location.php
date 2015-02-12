@@ -14,4 +14,9 @@ class Location extends Eloquent {
         return $this->hasMany('Reservation');
     }
 
+    public function images()
+    {
+        return $this->hasMany('Image');
+    }
+
 }
