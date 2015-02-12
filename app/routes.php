@@ -32,7 +32,12 @@ Route::get('search', 'HomeController@search');
 Route::get('signup', 'HomeController@signup');
 
 
+Route::resource('Users', 'UsersController');
 
+Route::resource('Locations', 'LocationsController');
 
+Route::resource('Dogs', 'DogsController');
 
+Route::resource('Reservations', 'ReservationsController');
 
+Route::resource('Images', 'ImagesController');
