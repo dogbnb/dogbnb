@@ -11,5 +11,4 @@ class Image extends Eloquent {
         return $this->belongsTo('Location');
     }
 
-
 }
