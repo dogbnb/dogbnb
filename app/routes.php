@@ -11,16 +11,16 @@
 |
 */
 
-
+Route::resource('users', 'UsersController');
 
 Route::get('/', 'HomeController@index');
 
-Route::resource('users', 'UsersController');
+
 
 
 // Route::get('createreservation', 'HomeController@createreservation');
 
-Route::resource('create-host', 'UsersController@createHost');
+Route::get('create-host', 'UsersController@createHost');
 
 Route::get('editprofile', 'HomeController@editprofile');
 
