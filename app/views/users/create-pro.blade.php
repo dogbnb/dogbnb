@@ -37,12 +37,12 @@
 </div>
 
 <div class="form-group">
-	{{ Form::label('dname', 'Dog\'s Name') }}
-	{{ Form::dname('dname', Input::old('dname'), array('class'=> 'form-control')) }}
+	{{ Form::label('rname', 'Rover\'s Name') }}
+	{{ Form::rname('rname', Input::old('rname'), array('class'=> 'form-control')) }}
 </div>
 
 <div class="form-group">
-	{{ Form::label('size', 'Dog\'s Size') }}
+	{{ Form::label('size', 'Rover\'s Size') }}
 	{{ Form::size('size', Input::old('size'), array('class'=> 'form-control')) }}
 </div>
 

@@ -39,7 +39,7 @@
 </div>
 
 <div class="form-group">
-	{{ Form::label('size', 'Size Allowed') }}
+	{{ Form::label('size', 'Maximum Size Allowed') }}
 	{{ Form::size('size', Input::old('size'), array('class'=> 'form-control')) }}
 </div>
 
