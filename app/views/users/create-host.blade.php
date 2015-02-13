@@ -1,12 +1,10 @@
 @extends ('layouts.master')
 
 
+
+
+
 @section('content')
-<html>
-<head>
-	<title>Become a Host</title>
-</head>
-<body>
 
 {{ Form::open(array('action'=> 'UsersController@store')) }}
 
@@ -81,7 +79,6 @@
 
 {{ Form::close() }}
 
-</body>
-</html>
+
 
 @stop

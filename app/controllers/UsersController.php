@@ -36,9 +36,9 @@ class UsersController extends BaseController {
 		return View::make('createprofile');
 	}
 
-	public function createhost()
+	public function createHost()
 	{
-		return View::make('createhost');
+		return View::make('users.create-host');
 	}
 	
 	public function creatersv()
