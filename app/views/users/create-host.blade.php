@@ -56,18 +56,18 @@
 </div>
 
 <div class="form-group">
-	{{ Form::label('nname', 'Nickname') }}
-	{{ Form::text('nname', Input::old('nname'), array('class'=> 'form-control')) }}
+	{{ Form::label('nickname', 'Nickname') }}
+	{{ Form::text('nickname', Input::old('nickname'), array('class'=> 'form-control')) }}
 </div>
 
 <div class="form-group">
-	{{ Form::label('size', 'Maximum Size Allowed') }}
-	{{ Form::text('size', Input::old('size'), array('class'=> 'form-control')) }}
+	{{ Form::label('size-allowed', 'Maximum Size Allowed') }}
+	{{ Form::text('size-allowed', Input::old('size-allowed'), array('class'=> 'form-control')) }}
 </div>
 
 <div class="form-group">
     {{ Form::label('description', 'Description') }}
-    {{ Form::textarea('body', Input::old('description'), array('class' => "form-control", 'rows' => '4')) }}
+    {{ Form::textarea('description', Input::old('description'), array('class' => "form-control", 'rows' => '4')) }}
 <!--     {{ $errors->first('body', '<p class="help-block">:message</p>') }} -->
   </div>
 
