@@ -67,12 +67,32 @@ class UsersController extends \BaseController {
 		$user->password = Input::get('password');
 
 		$user->fname = Input::get('fname');
+		$user->lname = Input::get('lname');
+		$user->phone = Input::get('phone');
 		$user->email = Input::get('email');
+		$user->nickname = Input::get('nickname');
+		$user->size_allowed = Input::get('size-allowed');
 		$user->save();
 
-		// $location = new Location();
-		// ...
 
+		$location = new Location();
+
+		$location->street = Input::get('street');
+		$location->apt = Input::get('apt');
+		$location->city = Input::get('city');
+		$location->state = Input::get('state');
+		$location->zip = Input::get('zip');
+		$location->description = Input::get('description');
+		$location->user_id = $user->id;
+		$location->save();
+
+
+		$dog = new Dog();
+
+		$dog->dog_name = Input::get('dog-name');
+		$dog->dog_size = Input::get('dog-size');
+		$dog->user_id = $user->id;
+		$dog->save();
 
 		Session::flash('successMessage', 'Your profile has been successfully created. Please login.');
 		return Redirect::to('/login');

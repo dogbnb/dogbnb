@@ -15,8 +15,8 @@ class CreateDogsTable extends Migration {
 		Schema::create('dogs', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('dog_name', 50);
-			$table->string('dog_size', 6);
+			$table->string('dog_name', 50)->nullable();
+			$table->string('dog_size', 6)->nullable();
 			$table->timestamps();
 
 			$table->integer('user_id')->unsigned();
@@ -32,9 +32,6 @@ class CreateDogsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('dogs', function($table){
-			$table->dropForeign('dogs_user_id_foreign');
-		});
 		Schema::drop('dogs');
 	}
 

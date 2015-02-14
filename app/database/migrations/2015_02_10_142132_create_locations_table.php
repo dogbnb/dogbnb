@@ -36,9 +36,6 @@ class CreateLocationsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('locations', function($table){
-			$table->dropForeign('users_user_id_foreign');
-		});
 		Schema::drop('locations');
 	}
 

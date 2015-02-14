@@ -16,7 +16,7 @@ class LocationsTableSeeder extends Seeder {
         $location->city = "San Antonio";
         $location->state = "TX";
         $location->zip = "78209";
-        $location->description = "I love dogs. They are great. Please let me keep your dog at my awesome house with a a huge backyard!";
+        $location->description = NULL;
         $location->user_id = $user->id;
         $location->save();
 	}
