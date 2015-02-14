@@ -2,14 +2,7 @@
 
 @section('content')
 
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-
-</body>
-</html>
+<h2 class="page-header">Temporary Upload Photos Page</h2>
 
 {{ Form::open(array('action' => 'HomeController@upload', 'method'=>'POST', 'files'=>true)) }}
 {{ Form::file('images[]', array('multiple'=>true)) }}
