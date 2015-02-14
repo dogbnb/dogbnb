@@ -7,18 +7,18 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
               <li>
-                <a href="/posts/create"> Browse Hosts</a>
+                <a href="/search"> Browse Hosts</a>
               </li>
               <li>
-                <a href="/posts/createpro"> Register Rover</a>
+                <a href="/users/create-rover"> Register Rover</a>
               </li>
               <li>
-                <a href="/posts/createhost"> Become a Host</a>
+                <a href="/users/create-host"> Become a Host</a>
               </li>
-              @if (Auth::user())
+              @if (Auth::check())
                 <li>
-                <a href="/logout"> Logout</a>
-              </li>
+                  <a href="/logout"> Logout</a>
+                </li>
               @else
                 <li>
                   <a href="/login"> Login</a>

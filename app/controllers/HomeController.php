@@ -1,6 +1,6 @@
 <?php
 
-class HomeController extends BaseController {
+class HomeController extends \BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -26,25 +26,55 @@ class HomeController extends BaseController {
 		return View::make('login');
 	}
 
-	public function showsearch()
+	public function showSearch()
 	{
 		return View::make('search');
 	}
 
+	public function showOwnerProfile()
+	{
+		return View::make('owner-profile');
+	}
+
+	public function showHostProfile()
+	{
+		return View::make('host-profile');
+	}
 
 
 
-	// public function doLogin(){
-	// 	$email = Input::get('email');
-	// 	$password = Input::get('password');
+	public function doLogin(){
+		$email = Input::get('email');
+		$password = Input::get('password');
 
-	// 	if (Auth::attempt(array('email' => $email, 'password' => $password))) {
- //    		Session::flash('successMessage', "You've logged in!");
- //    		// need to change..... return Redirect::intended('/');
-	// 	} else {
-	//    		Session::flash('errorMessage', 'Failed to log in');
-	//    		// return Redirect::action(' HomeController@showLogin');
-	// 	}
+		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+    		
+    		Session::flash('successMessage', "You've logged in!");
+
+    		if (Auth::user()->role == 'owner') {
+    			// return Redirect::intended('owner-profile.blade.php');
+    			return View::make('owner-profile');
+
+    		} elseif (Auth::user()->role == 'host') {
+    			// return Redirect::intended('host-profile.blade.php');
+    			return View::make('host-profile');
+
+    		}
+
+		} else {
+	   		Session::flash('errorMessage', 'Failed to log in');
+	   		return Redirect::action('HomeController@showLogin');
+		}
+	}
+
+	public function doLogout()
+	{
+		Auth::logout();
+
+		Session::flash('successMessage', 'Successfully logged out!');
+
+		return Redirect::action('HomeController@index');
+	}
 
 	public function upload(){
 	    
