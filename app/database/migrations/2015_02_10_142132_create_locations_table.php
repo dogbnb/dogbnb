@@ -20,6 +20,7 @@ class CreateLocationsTable extends Migration {
 			$table->string('city', 100);
 			$table->string('state', 2);
 			$table->integer('zip');
+			$table->text('description')->nullable();
 			$table->timestamps();
 			
 			$table->integer('user_id')->unsigned();
