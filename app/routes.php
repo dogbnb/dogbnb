@@ -11,42 +11,41 @@
 |
 */
 
-
-
 Route::get('/', 'HomeController@index');
 
-Route::resource('users', 'UsersController');
+Route::get('login', 'HomeController@showLogin');
+
+Route::post('login', 'HomeController@doLogin');
+
+Route::get('logout', 'HomeController@doLogout');
 
 
-// Route::get('createreservation', 'HomeController@createreservation');
+Route::get('users/create-host', 'UsersController@showCreateHost');
 
-Route::resource('create-host', 'UsersController@createHost');
+Route::get('users/create-rover', 'UsersController@showCreateRover');
 
-Route::get('editprofile', 'HomeController@editprofile');
+Route::get('users/create-rsv', 'UsersController@showCreateReservation');
+
+
+
 
 Route::get('index', 'HomeController@index');
 
-Route::get('login', 'HomeController@login');
+Route::get('search', 'HomeController@showSearch');
 
-Route::get('search', 'HomeController@search');
+Route::get('owner-profile', 'HomeController@showOwnerProfile');
 
-Route::get('signup', 'HomeController@signup');
-
-Route::get('/upload', function(){
-
-	return View::make('upload');
-});
-
-Route::post('/upload', 'HomeController@upload');
+Route::get('host-profile', 'HomeController@showHostProfile');
 
 
 
-Route::resource('Users', 'UsersController');
 
-Route::resource('Locations', 'LocationsController');
+Route::resource('users', 'UsersController');
 
-Route::resource('Dogs', 'DogsController');
+Route::resource('locations', 'LocationsController');
 
-Route::resource('Reservations', 'ReservationsController');
+Route::resource('dogs', 'DogsController');
 
-Route::resource('Images', 'ImagesController');
+Route::resource('reservations', 'ReservationsController');
+
+Route::resource('images', 'ImagesController');

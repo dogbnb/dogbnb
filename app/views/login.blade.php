@@ -1,11 +1,7 @@
 @extends ('layouts.master')
 
 @section('content')
-<html>
-<head>
-	<title>Please Login</title>
-</head>
-<body>
+
 
 {{ Form::open(array('action'=> 'HomeController@showLogin')) }}
 
@@ -25,7 +21,6 @@
 
 {{ Form::close() }}
 
-</body>
-</html>
+
 
 @stop
