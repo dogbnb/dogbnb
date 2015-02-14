@@ -3,6 +3,7 @@
 
 @section('content')
 
+	<title>Create Rover Profile</title>
 
 <h2 class="page-header">Register Rover</h2>
 
