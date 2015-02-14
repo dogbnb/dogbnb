@@ -1,6 +1,9 @@
 @extends ('layouts.master')
 
+
 @section('content')
+	<title>Create Host Profile</title>
+
 
 <h2 class="page-header">Become A Host</h2>
 
