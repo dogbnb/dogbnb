@@ -2,11 +2,10 @@
 @extends ('layouts.master')
 
 @section('content')
-<html>
-<head>
+
 	<title>Create Rover Profile</title>
-</head>
-<body>
+
+<h1>Create Rover's Profile</h1>
 
 
 {{ Form::open(array('action'=> 'UsersController@store')) }}
@@ -80,7 +79,5 @@
 	{{Form::submit('Login', array('class'=> 'btn btn-primary')) }}
 </div>
 
-</body>
-</html>
 
 @stop

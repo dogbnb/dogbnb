@@ -1,16 +1,13 @@
 @extends ('layouts.master')
 
 @section('content')
-<html>
-<head>
+
 	<title>Create Reservation</title>
 
-</head>
-<body>
+<h1>Create Reservation</h1>
+
 
 //('action'=> 'UsersController@creatersv')
 
-</body>
-</html>
 
 @stop

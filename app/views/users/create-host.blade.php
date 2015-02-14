@@ -2,9 +2,12 @@
 
 
 
-
-
 @section('content')
+
+	<title>Create Host Profile</title>
+
+
+<h1>Create Host</h1>
 
 {{ Form::open(array('action'=> 'UsersController@store')) }}
 
