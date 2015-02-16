@@ -41,6 +41,14 @@ class HomeController extends \BaseController {
 		return View::make('host-profile');
 	}
 
+	public function distanceFinder()
+	{
+		return View::make('distance-finder');
+	}
+
+
+
+
 
 	public function doLogin(){
 		$email = Input::get('email');
@@ -75,8 +83,8 @@ class HomeController extends \BaseController {
 		return Redirect::action('HomeController@index');
 	}
 
-	public function upload(){
-	    	
+
+	public function photoUpload() {
 	// getting all of the post data
 	$files = Input::file('images');
 	foreach($files as $file) {
