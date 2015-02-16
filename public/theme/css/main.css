@@ -5,7 +5,7 @@ body {
   background: url(../img/page-background.png);
 }
 .section {
-  padding: 30px 0;
+  padding: 9px 0;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
@@ -165,9 +165,9 @@ a:hover {
   text-align: center;
   background: #fafafa;
   position: relative;
-  width: 48%;
+  width: 75%;
   margin: 10px 1% 10px 0;
-  padding: 20px;
+  padding: 9px;
   -webkit-border-radius: 7px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 7px;
@@ -467,6 +467,12 @@ a:hover {
 /*--------------------------------------------------------------------------
 +	Clients Logos Style
 --------------------------------------------------------------------------*/
+.logo-wrapper header{
+  font-family: 'Unkempt', cursive;
+  font-size: 250%;
+  color:#8fb258;
+}
+
 .clients-logo-wrapper img {
   max-width: 100%;
 }
@@ -1629,7 +1635,7 @@ span.color-red {
   min-height: 80px;
 }
 .coming-soon-top .logo-wrapper {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .coming-soon-content {
   margin-top: 5%;

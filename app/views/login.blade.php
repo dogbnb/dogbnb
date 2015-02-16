@@ -1,5 +1,8 @@
 @extends ('layouts.master')
 
+@include('partials.navbar')     
+
+
 @section('content')
 
 
@@ -20,7 +23,5 @@
 </div>
 
 {{ Form::close() }}
-
-
 
 @stop
