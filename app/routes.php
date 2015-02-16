@@ -19,6 +19,11 @@ Route::post('login', 'HomeController@doLogin');
 
 Route::get('logout', 'HomeController@doLogout');
 
+Route::get('distance-finder', 'HomeController@distanceFinder');
+
+Route::get('upload', 'HomeController@showupload');
+Route::post('upload', 'HomeController@photoUpload');
+
 
 Route::get('users/create-host', 'UsersController@showCreateHost');
 
