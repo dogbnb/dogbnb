@@ -53,8 +53,6 @@ class HomeController extends \BaseController {
 
 
 
-
-
 	public function doLogin(){
 		$email = Input::get('email');
 		$password = Input::get('password');
