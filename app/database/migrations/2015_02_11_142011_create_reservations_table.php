@@ -35,12 +35,12 @@ class CreateReservationsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::table('reservations', function($table){
-			$table->dropForeign('locations_location_id_foreign');
-		});
-		Schema::table('reservations', function($table){
-			$table->dropForeign('dogs_dog_id_foreign');
-		});
+		// Schema::table('reservations', function($table){
+		// 	$table->dropForeign('locations_location_id_foreign');
+		// });
+		// Schema::table('reservations', function($table){
+		// 	$table->dropForeign('dogs_dog_id_foreign');
+		// });
 		Schema::drop('reservations');
 	}
 
