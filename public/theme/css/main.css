@@ -1860,9 +1860,8 @@ span.color-red {
 .dog-banner {
   width: 1450px;
   height: 400px;
-  background-image: url("/theme/img/dog.jpg");
   background-image: url("/theme/img/dog2.jpg");
-  background-size: contain;
+  background-size: cover;
   
 }
 
