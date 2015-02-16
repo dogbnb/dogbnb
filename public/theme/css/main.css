@@ -5,7 +5,7 @@ body {
   background: url(../img/page-background.png);
 }
 .section {
-  padding: 9px 0;
+  padding: 0px 0;
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
   -o-transform: translateZ(0);
@@ -18,7 +18,7 @@ body {
 .section .container:first-child h1,
 .section .container:first-child h2,
 .section .container:first-child h3 {
-  margin-top: 0;
+  margin-top: 10;
   font-weight: 700;
 }
 .input-micro {
@@ -162,12 +162,12 @@ a:hover {
 --------------------------------------------------------------------------*/
 .pricing-plan {
   float: left;
-  text-align: center;
+  text-align: left;
   background: #fafafa;
   position: relative;
-  width: 75%;
+  width: 48%;
   margin: 10px 1% 10px 0;
-  padding: 9px;
+  padding: 20px;
   -webkit-border-radius: 7px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 7px;
@@ -246,7 +246,7 @@ a:hover {
   line-height: 2;
   font-size: 12px;
   color: #999;
-  text-align: center;
+  text-align: left;
   list-style-type: none;
 }
 .pricing-plan .pricing-plan-features li strong {
@@ -310,8 +310,8 @@ a:hover {
 }
 @media (min-width: 768px) {
   .pricing-plan {
-    width: 25%;
-    margin: 20px 0;
+    width: 55%;
+    margin: 5px 0;
     padding: 20px;
     -webkit-border-radius: 0;
     -webkit-background-clip: padding-box;
@@ -390,7 +390,7 @@ a:hover {
   display: inline-block;
   line-height: 36px;
   margin-right: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .calltoaction-wrapper a {
   vertical-align: top;
@@ -1861,6 +1861,8 @@ span.color-red {
   width: 1450px;
   height: 400px;
   background-image: url("/theme/img/dog.jpg");
+  background-image: url("/theme/img/dog2.jpg");
+  background-size: contain;
   
 }
 

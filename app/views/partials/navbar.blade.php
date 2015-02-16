@@ -22,7 +22,7 @@
 		        </div>
 		        <nav id="mainmenu" class="mainmenu">
 					<ul>
-						<li class="logo-wrapper"><a href="index.html"><header>Rover Sleepover</header></a></li>
+						<li class="logo-wrapper"><a href="/index"><header>Rover Sleepover</header></a></li>
 						<li class="active">
 							<a href="/index">Home</a>
 						</li>

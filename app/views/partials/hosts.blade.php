@@ -12,7 +12,7 @@
 							<div class="ribbon-wrapper">
 								<div class="price-ribbon ribbon-red">Popular</div>
 							</div>
-							<h2 class="pricing-plan-title">Starter</h2>
+							<h2 class="pricing-plan-title">Name</h2>
 							<p class="pricing-plan-price">FREE</p>
 							<!-- Pricing Plan Features -->
 							<ul class="pricing-plan-features">
