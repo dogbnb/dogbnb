@@ -42,7 +42,6 @@ class HomeController extends \BaseController {
 	}
 
 
-
 	public function doLogin(){
 		$email = Input::get('email');
 		$password = Input::get('password');
@@ -77,8 +76,7 @@ class HomeController extends \BaseController {
 	}
 
 	public function upload(){
-	    
-		
+	    	
 	// getting all of the post data
 	$files = Input::file('images');
 	foreach($files as $file) {
