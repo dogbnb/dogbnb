@@ -67,8 +67,8 @@ class UserTableSeeder extends Seeder
         $user->lname = "Jones";
         $user->phone = "2104523954";
         $user->email = "EricLJones@jourrapide.com";
-        $user->nickname = NULL;
-        $user->size_allowed = NULL;
+        $user->nickname = "Doggie Playtime";
+        $user->size_allowed = "Large";
         $user->password = "password";
         $user->save();
 
@@ -78,8 +78,8 @@ class UserTableSeeder extends Seeder
         $user->lname = "Hutchinson";
         $user->phone = "2104592143";
         $user->email = "ThomasKHutchinson@dayrep.com";
-        $user->nickname = NULL;
-        $user->size_allowed = NULL;
+        $user->nickname = "Paw-fect dog sitting";
+        $user->size_allowed = "Medium";
         $user->password = "password";
         $user->save();
 
@@ -89,8 +89,8 @@ class UserTableSeeder extends Seeder
         $user->lname = "Brummit";
         $user->phone = "2108651539";
         $user->email = "HeatherGBrummitt@jourrapride.com";
-        $user->nickname = NULL;
-        $user->size_allowed = NULL;
+        $user->nickname = "Healthy-Furkids";
+        $user->size_allowed = "Medium";
         $user->password = "password";
         $user->save();
 
@@ -100,8 +100,8 @@ class UserTableSeeder extends Seeder
         $user->lname = "Howe";
         $user->phone = "2102384927";
         $user->email = "JarrodEhowe@armyspy.com";
-        $user->nickname = NULL;
-        $user->size_allowed = NULL;
+        $user->nickname = "Dog Tails";
+        $user->size_allowed = "Large";
         $user->password = "password";
         $user->save();
 
@@ -111,8 +111,8 @@ class UserTableSeeder extends Seeder
         $user->lname = "Webb";
         $user->phone = "2104856492";
         $user->email = "DeirdeMWebb@gmail.com";
-        $user->nickname = NULL;
-        $user->size_allowed = NULL;
+        $user->nickname = "Paws 4 Fun";
+        $user->size_allowed = "Large";
         $user->password = "password";
         $user->save();
 
@@ -122,8 +122,8 @@ class UserTableSeeder extends Seeder
         $user->lname = "Chisholm";
         $user->phone = "2108532855";
         $user->email = "LonnieJchisholm@gmail.com";
-        $user->nickname = NULL;
-        $user->size_allowed = NULL;
+        $user->nickname = "Pugs and kisses, we love dog!";
+        $user->size_allowed = "Medium";
         $user->password = "password";
         $user->save();
 

@@ -35,16 +35,6 @@
 </div>
 
 <div class="form-group">
-	{{ Form::label('rname', 'Rover\'s Name') }}
-	{{ Form::text('rname', Input::old('rname'), array('class'=> 'form-control')) }}
-</div>
-
-<div class="form-group">
-	{{ Form::label('size', 'Rover\'s Size') }}
-	{{ Form::text('size', Input::old('size'), array('class'=> 'form-control')) }}
-</div>
-
-<div class="form-group">
 	{{ Form::label('street', 'Street Address') }}
 	{{ Form::text('street', Input::old('street'), array('class'=> 'form-control')) }}
 </div>
@@ -69,12 +59,28 @@
 	{{ Form::text('zip', Input::old('zip'), array('class'=> 'form-control')) }}
 </div>
 
+<hr>
+
+<div class="form-group">
+	{{ Form::label('dog-name', 'Rover Name') }}
+	{{ Form::text('dog-name', Input::old('dog-name'), array('class'=> 'form-control')) }}
+</div>
+
+<div class="form-group">
+	{{ Form::label('dog-size', 'How big is Rover? ') }}
+	{{ Form::select('dog-size', [
+   'small' => 'Under 20lbs.',
+   'medium' => '20 - 40lbs.',
+   'large' => 'Over 40lbs.']
+) }}
+</div>
+
 <div class="hidden_role">
 	{{ Form::hidden('role', 'owner') }}
 </div>
 
 <div class="form-group">
-	{{Form::submit('Login', array('class'=> 'btn btn-primary')) }}
+	{{Form::submit('Submit', array('class'=> 'btn btn-primary')) }}
 </div>
 
 
