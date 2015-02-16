@@ -1,7 +1,11 @@
 @extends ('layouts.master')
 
+@include('partials.navbar')
+
 @section('content')
 
-<h2 class="page-header">Search/Browse Hosts</h2>
+<title>Browse Hosts</title>
 
 @stop
+
+@include('partials.hosts')

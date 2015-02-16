@@ -1,5 +1,6 @@
-@extends ('layouts.master')
+@extends('layouts.master')
 
+@include('partials.navbar')
 
 @section('content')
 	<title>Create Host Profile</title>
