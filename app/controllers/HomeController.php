@@ -89,36 +89,6 @@ class HomeController extends \BaseController {
 	}
 
 
-	public function photoUpload() {
-	// getting all of the post data
-		$files = Input::file('images');
-		// dd($files);
-		foreach($files as $file) {
-		  // validating each file.
-		  $rules = array('file' => 'required'); //'required|mimes:png,jpeg'
-		  $validator = Validator::make(array('file'=> $file), $rules);
-		  if($validator->passes()){
-		    // path is root/uploads
-		    $destinationPath = 'uploads';
-		    $filename = $file->getClientOriginalName();
-		    $upload_success = $file->move($destinationPath, $filename);
-		    dd();
-		    // flash message to show success.
 
-		    $image = new Image();
-		    $image->img_path = 'uploads/' . $filename;
-		    // $image->location_id = 
-		    $image->save();
-
-
-		    Session::flash('successMessage', 'Upload successfully'); 
-		    return Redirect::to('upload');
-		  } 
-		  else {
-		    // redirect back with errors.
-		    return Redirect::to('upload')->withInput()->withErrors($validator);
-		  }
-		}
-	}
 
 }
