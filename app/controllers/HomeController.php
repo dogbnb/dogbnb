@@ -21,11 +21,6 @@ class HomeController extends \BaseController {
 		return View::make('index');
 	}
 
-	public function showupload()
-	{
-		return View::make('upload');
-	}
-
 	public function showlogin()
 	{
 		return View::make('login');
@@ -50,8 +45,6 @@ class HomeController extends \BaseController {
 	{
 		return View::make('distance-finder');
 	}
-
-
 
 
 
@@ -87,8 +80,5 @@ class HomeController extends \BaseController {
 
 		return Redirect::action('HomeController@index');
 	}
-
-
-
 
 }

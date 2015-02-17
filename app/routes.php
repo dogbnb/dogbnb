@@ -22,7 +22,7 @@ Route::get('logout', 'HomeController@doLogout');
 Route::get('distance-finder', 'HomeController@distanceFinder');
 
 Route::get('upload', 'HomeController@showupload');
-Route::post('upload', 'HomeController@photoUpload');
+Route::post('upload', 'UsersController@photoUpload');
 
 
 Route::get('users/create-host', 'UsersController@showCreateHost');
@@ -34,7 +34,7 @@ Route::get('users/create-rsv', 'UsersController@showCreateReservation');
 // Route::get('users/edit-host', 'UsersController@editHost');
 
 // Route::get('users/edit-rover', 'UsersController@editRover');
-
+Route::get('carousel', 'UsersController@carousel');
 
 
 
