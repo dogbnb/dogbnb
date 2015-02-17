@@ -44,7 +44,7 @@ Route::get('search', 'HomeController@showSearch');
 
 Route::get('owner-profile', 'HomeController@showOwnerProfile');
 
-Route::get('host-profile', 'HomeController@showHostProfile');
+// Route::get('host-profile', 'usersController@show');
 
 
 
