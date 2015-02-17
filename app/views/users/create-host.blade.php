@@ -8,7 +8,7 @@
 
 <h2 class="page-header">Become A Host</h2>
 
-{{ Form::open(array('action'=> 'UsersController@store')) }}
+{{ Form::open(array('action'=> 'UsersController@store', 'files' => true)) }}
 <div class="form-group">
 	{{ Form::label('fname', 'First Name') }}
 	{{ Form::text('fname', Input::old('fname'), array('class'=> 'form-control')) }}
@@ -76,6 +76,7 @@
   </div>
 
   <div class="form-group">
+
   	{{ Form::file('images[]', array('multiple'=>true)) }}
   </div>
 
