@@ -6,9 +6,9 @@
 
 	<title>Create Rover Profile</title>
 
-<h2 class="page-header">Register Rover</h2>
 
 <div class="container">
+<h2>Register Rover</h2>
 	<div class="signform">
 	{{ Form::open(array('action'=> 'UsersController@store')) }}
 

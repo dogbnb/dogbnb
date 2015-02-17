@@ -9,12 +9,13 @@
 
 
 <div class="container">
+	<h2>Login</h2>
 	<div class="signform">
 		{{ Form::open(array('action'=> 'HomeController@showLogin')) }}
 
 		<div class="form-group">
 			{{ Form::label('email', 'Email Address') }}
-			{{ Form::email('email', Input::old('email'), array('class'=> 'form-control')) }}
+			{{ Form::email('email', Input::old('email'), array('class'=> 'form-control', 'autofocus')) }}
 		</div>
 
 		<div class="form-group">

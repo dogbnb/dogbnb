@@ -3,13 +3,10 @@
 @include('partials.navbar')
 
 @section('content')
-	<title>Create Host Profile</title>
-
-
-<h2 class="page-header">Become A Host</h2>
-
+	<title>Become A Host</title>
 
 <div class="container">
+<h2>Become A Host</h2>
 	<div class="signform">
 	{{ Form::open(array('action'=> 'UsersController@store', 'files' => true)) }}
 		<div class="form-group">
