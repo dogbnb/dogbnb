@@ -9,18 +9,18 @@
         				<!-- Pricing Plan -->
 						<div class="pricing-plan">
 							<!-- Pricing Plan Ribbon -->
-							<div class="ribbon-wrapper">
+							<!-- <div class="ribbon-wrapper">
 								<div class="price-ribbon ribbon-red">Popular</div>
-							</div>
+							</div> -->
 							<h2 class="pricing-plan-title">Name</h2>
-							<p class="pricing-plan-price">FREE</p>
+							<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
 							<!-- Pricing Plan Features -->
 							<ul class="pricing-plan-features">
-								<li><strong>1</strong> user</li>
-								<li><strong>Unlimited</strong> projects</li>
-								<li><strong>2GB</strong> storage</li>
+								<li><strong>Nickname: </strong>Doggy Dayz</li>
+								<li><strong>Max Size Allowed: </strong>Small</li>
+								<li><strong>Description: </strong>Super loads of fun for evaaa</li>
 							</ul>
-							<a href="users/create-rsv" class="btn">Reserve Now</a>
+							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
 						</div>
 			</div>
 		</div>
@@ -29,14 +29,14 @@
 	    	<div class="container">
 						<!-- End Pricing Plan -->
 					    <div class="pricing-plan">
-							<h2 class="pricing-plan-title">Advanced</h2>
-							<p class="pricing-plan-price">$49<span>/mo</span></p>
+							<h2 class="pricing-plan-title">Name</h2>
+							<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
 								<ul class="pricing-plan-features">
-									<li><strong>10</strong> users</li>
-									<li><strong>Unlimited</strong> projects</li>
-									<li><strong>20GB</strong> storage</li>
+									<li><strong>Nickname: </strong> users</li>
+									<li><strong>Max Size Allowed: </strong> projects</li>
+									<li><strong>Description: </strong> storage</li>
 								</ul>
-							<a href="users/create-rsv" class="btn">Reserve Now</a>
+							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
 					    </div>
 		    </div>
 		</div>
@@ -45,14 +45,14 @@
 	    	<div class="container">
 					    <!-- Promoted Pricing Plan -->
 					    <div class="pricing-plan pricing-plan-promote">
-								<h2 class="pricing-plan-title">Premium</h2>
-								<p class="pricing-plan-price">$99<span>/mo</span></p>
+								<h2 class="pricing-plan-title">Name</h2>
+								<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
 								<ul class="pricing-plan-features">
-									<li><strong>Unlimited</strong> users</li>
-									<li><strong>Unlimited</strong> projects</li>
-									<li><strong>100GB</strong> storage</li>
+									<li><strong>Nickname: </strong> users</li>
+									<li><strong>Max Size Allowed: </strong> projects</li>
+									<li><strong>Description: </strong> storage</li>
 								</ul>
-							<a href="users/create-rsv" class="btn">Reserve Now</a>
+							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
 					    </div>
 		    </div>
 		</div>
@@ -61,17 +61,17 @@
 	    	<div class="container">
 					    <div class="pricing-plan">
 					    	<!-- Pricing Plan Ribbon -->
-							<div class="ribbon-wrapper">
+							<!-- <div class="ribbon-wrapper">
 								<div class="price-ribbon ribbon-green">New</div>
-							</div>
-							<h2 class="pricing-plan-title">Mega</h2>
-							<p class="pricing-plan-price">$199<span>/mo</span></p>
+							</div> -->
+							<h2 class="pricing-plan-title">Name</h2>
+							<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
 								<ul class="pricing-plan-features">
-									<li><strong>Unlimited</strong> users</li>
-									<li><strong>Unlimited</strong> projects</li>
-									<li><strong>100GB</strong> storage</li>
+									<li><strong>Nickname: </strong> users</li>
+									<li><strong>Max Size Allowed: </strong> projects</li>
+									<li><strong>Description: </strong> storage</li>
 								</ul>
-							<a href="users/create-rsv" class="btn">Reserve Now</a>
+							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
 					    </div>
 	    	</div>
 	    </div>
