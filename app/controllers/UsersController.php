@@ -86,7 +86,28 @@ class UsersController extends \BaseController {
 		$location->user_id = $user->id;
 		$location->save();
 
+		// Handles Image Uploads
+		if (Input::hasFile('images')) {
 
+			$imageArray = Input::file('images');
+			foreach($imageArray as $image) {
+			  // validating each file.
+			  // $rules = array('file' => 'required'); //'required|mimes:png,jpeg'
+			  // $validator = Validator::make(array('file'=> $file), $rules);
+			  // if($validator->passes()){
+				    // path is root/uploads
+				    $destinationPath = 'uploads';
+				    $filename = $image->getClientOriginalName();
+				    $upload_success = $image->move($destinationPath, $filename);
+
+				    $image = new Image();
+				    $image->img_name = 'uploads/' . $filename;
+				    $image->location_id = $location->id;
+				    $image->save();
+				// }
+			}
+		}
+		
 		$dog = new Dog();
 
 		$dog->dog_name = Input::get('dog-name');

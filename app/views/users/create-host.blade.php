@@ -8,7 +8,7 @@
 
 <h2 class="page-header">Become A Host</h2>
 
-{{ Form::open(array('action'=> 'UsersController@store')) }}
+{{ Form::open(array('action'=> 'UsersController@store', 'files' => true)) }}
 <div class="form-group">
 	{{ Form::label('fname', 'First Name') }}
 	{{ Form::text('fname', Input::old('fname'), array('class'=> 'form-control')) }}
@@ -73,6 +73,11 @@
     {{ Form::label('description', 'Description') }}
     {{ Form::textarea('description', Input::old('description'), array('class' => "form-control", 'rows' => '4')) }}
 <!--     {{ $errors->first('body', '<p class="help-block">:message</p>') }} -->
+  </div>
+
+  <div class="form-group">
+	<p>Upload photos</p>
+  	{{ Form::file('images[]', array('multiple'=>true)) }}
   </div>
 
 <div class="hidden_role">
