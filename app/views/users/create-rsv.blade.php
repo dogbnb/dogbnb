@@ -2,27 +2,15 @@
 
 @include('partials.navbar')
 
+@section('css')
+<link rel="stylesheet" type="text/css" href="/theme/js/jquery-ui/jquery-ui.theme.min.css">
+<link rel="stylesheet" type="text/css" href="/theme/js/jquery-ui/jquery-ui.css">
+@stop
+
+@section('topscript')
+@stop
+
 @section('content')
-
-
-
-<head>
-
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-	<title>Schedule Sleepover</title>
-
-  <script>
-  $(function() {
-    $( ".datepicker" ).datepicker();
-  });
-  </script>
-
-</head>
-
-<body>
 
 <div class="section">
 	<div class="container">
@@ -36,6 +24,19 @@
 	</div>
 </div>
 
-</body>
-</html>
+@stop
+
+@section('bottomscript')
+<script src="/theme/js/jquery-ui/jquery-ui.js"></script>
+
+
+
+<script>
+
+	$(document).ready(function() {
+	  $( ".datepicker" ).datepicker();	
+	});
+
+</script>
+
 @stop
