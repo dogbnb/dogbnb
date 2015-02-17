@@ -138,12 +138,18 @@ class UsersController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function edit($id)
-	{
-		$user = User::find($id);
+	// public function edit($id)
+	// {
+	// 	$user = User::find($id);
 
-		return View::make('users.edit', compact('user'));
-	}
+	// 	return View::make('users.edit', compact('user'));
+	// }
+
+	// public function editRover($id)
+	// {
+	// 	$user = User::findOrFail($id);
+	// 	return View::make('users.edit-rover')->with('user', $user);
+	// }
 
 	// /**
 	//  * Update the specified user in storage.
@@ -154,17 +160,20 @@ class UsersController extends \BaseController {
 	public function update($id)
 	{
 		$user = User::findOrFail($id);
+		return $this->
 
-		$validator = Validator::make($data = Input::all(), User::$rules);
 
-		if ($validator->fails())
-		{
-			return Redirect::back()->withErrors($validator)->withInput();
-		}
 
-		$user->update($data);
+		// $validator = Validator::make($data = Input::all(), User::$rules);
 
-		return Redirect::route('users.index');
+		// if ($validator->fails())
+		// {
+		// 	return Redirect::back()->withErrors($validator)->withInput();
+		// }
+
+		// $user->update($data);
+
+		// return Redirect::route('users.index');
 	}
 
 	// /**

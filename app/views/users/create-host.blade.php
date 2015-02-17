@@ -66,7 +66,11 @@
 
 		<div class="form-group">
 			{{ Form::label('size-allowed', 'Maximum Size Allowed') }}
-			{{ Form::text('size-allowed', Input::old('size-allowed'), array('class'=> 'form-control')) }}
+			{{ Form::select('size-allowed', [
+		   'small' => 'Under 20lbs.',
+		   'medium' => '20 - 40lbs.',
+		   'large' => 'Over 40lbs.']
+			) }}
 		</div>
 
 		<div class="form-group">
