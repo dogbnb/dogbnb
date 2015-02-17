@@ -34,7 +34,7 @@ Route::get('users/create-rsv', 'UsersController@showCreateReservation');
 // Route::get('users/edit-host', 'UsersController@editHost');
 
 // Route::get('users/edit-rover', 'UsersController@editRover');
-
+Route::get('carousel', 'UsersController@carousel');
 
 
 

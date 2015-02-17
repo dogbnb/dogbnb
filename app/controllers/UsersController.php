@@ -7,6 +7,11 @@ class UsersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
+	public function carousel()
+	{
+		return View::make('carousel');
+	}
+
 	public function index()
 	{
 		$users = User::all();
@@ -104,7 +109,7 @@ class UsersController extends \BaseController {
 				    $image->img_name = 'uploads/' . $filename;
 				    $image->location_id = $location->id;
 				    $image->save();
-				// }
+				//}
 			}
 		}
 		
@@ -160,7 +165,7 @@ class UsersController extends \BaseController {
 	public function update($id)
 	{
 		$user = User::findOrFail($id);
-		return $this->
+		// return $this->
 
 
 

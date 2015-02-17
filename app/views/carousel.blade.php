@@ -121,54 +121,26 @@
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
             <div>
-                <img u="image" src="../img/alila/01.jpg" />
-                <img u="thumb" src="../img/alila/thumb-01.jpg" />
+                <img u="image" src="../uploads/house1.jpg" />
+                <img u="thumb" src="../uploads/house1.jpg" />
             </div>
             <div>
-                <img u="image" src="../img/alila/02.jpg" />
-                <img u="thumb" src="../img/alila/thumb-02.jpg" />
+                <img u="image" src="../uploads/house2.jpg" />
+                <img u="thumb" src="../uploads/house2.jpg" />
             </div>
             <div>
-                <img u="image" src="../img/alila/03.jpg" />
-                <img u="thumb" src="../img/alila/thumb-03.jpg" />
+                <img u="image" src="../uploads/house3.jpg" />
+                <img u="thumb" src="../uploads/house3.jpg" />
             </div>
             <div>
-                <img u="image" src="../img/alila/04.jpg" />
-                <img u="thumb" src="../img/alila/thumb-04.jpg" />
+                <img u="image" src="../uploads/house4.jpg" />
+                <img u="thumb" src="../uploads/house4.jpg" />
             </div>
             <div>
-                <img u="image" src="../img/alila/05.jpg" />
-                <img u="thumb" src="../img/alila/thumb-05.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../img/alila/06.jpg" />
-                <img u="thumb" src="../img/alila/thumb-06.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../img/alila/07.jpg" />
-                <img u="thumb" src="../img/alila/thumb-07.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../img/alila/08.jpg" />
-                <img u="thumb" src="../img/alila/thumb-08.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../img/alila/09.jpg" />
-                <img u="thumb" src="../img/alila/thumb-09.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../img/alila/10.jpg" />
-                <img u="thumb" src="../img/alila/thumb-10.jpg" />
+                <img u="image" src="../uploads/house5.jpg" />
+                <img u="thumb" src="../uploads/house5.jpg" />
             </div>
             
-            <div>
-                <img u="image" src="../img/alila/11.jpg" />
-                <img u="thumb" src="../img/alila/thumb-11.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../img/alila/12.jpg" />
-                <img u="thumb" src="../img/alila/thumb-12.jpg" />
-            </div>
         </div>
         
         <!-- Arrow Navigator Skin Begin -->
