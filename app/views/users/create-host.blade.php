@@ -75,6 +75,10 @@
 <!--     {{ $errors->first('body', '<p class="help-block">:message</p>') }} -->
   </div>
 
+  <div class="form-group">
+  	{{ Form::file('images[]', array('multiple'=>true)) }}
+  </div>
+
 <div class="hidden_role">
 	{{ Form::hidden('role', 'host') }}
 </div>
