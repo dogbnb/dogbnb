@@ -109,7 +109,7 @@ a:hover {
 /* Multicolumn */
 .service-wrapper {
   background: #FFF;
-  margin: 20px 10px;
+  margin: 30px 10px;
   text-align: center;
   padding: 30px 20px;
   -webkit-border-radius: 5px;
@@ -1864,6 +1864,14 @@ span.color-red {
   background-size: cover;
   
 }
+
+
+.signform {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 
 #sequence {
   overflow: hidden;
