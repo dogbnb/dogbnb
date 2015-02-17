@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration {
 		    $table->string('fname', 50);
 		    $table->string('lname', 50);
 		    $table->char('phone', 10);
-		    $table->string('email', 200)->unique();
+		    $table->string('email', 200);
 		    $table->string('nickname', 200)->nullable();
 		    $table->string('size_allowed', 6)->nullable();
 		    $table->string('password', 255);

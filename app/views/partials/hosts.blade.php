@@ -12,7 +12,7 @@
 							<div class="ribbon-wrapper">
 								<div class="price-ribbon ribbon-red">Popular</div>
 							</div>
-							<h2 class="pricing-plan-title">Starter</h2>
+							<h2 class="pricing-plan-title">Name</h2>
 							<p class="pricing-plan-price">FREE</p>
 							<!-- Pricing Plan Features -->
 							<ul class="pricing-plan-features">
@@ -20,7 +20,7 @@
 								<li><strong>Unlimited</strong> projects</li>
 								<li><strong>2GB</strong> storage</li>
 							</ul>
-							<a href="index.html" class="btn">Reserve Now</a>
+							<a href="users/create-rsv" class="btn">Reserve Now</a>
 						</div>
 			</div>
 		</div>
@@ -36,7 +36,7 @@
 									<li><strong>Unlimited</strong> projects</li>
 									<li><strong>20GB</strong> storage</li>
 								</ul>
-							<a href="index.html" class="btn">Reserve Now</a>
+							<a href="users/create-rsv" class="btn">Reserve Now</a>
 					    </div>
 		    </div>
 		</div>
@@ -52,7 +52,7 @@
 									<li><strong>Unlimited</strong> projects</li>
 									<li><strong>100GB</strong> storage</li>
 								</ul>
-							<a href="index.html" class="btn">Reserve Now</a>
+							<a href="users/create-rsv" class="btn">Reserve Now</a>
 					    </div>
 		    </div>
 		</div>
@@ -71,7 +71,7 @@
 									<li><strong>Unlimited</strong> projects</li>
 									<li><strong>100GB</strong> storage</li>
 								</ul>
-							<a href="index.html" class="btn">Reserve Now</a>
+							<a href="users/create-rsv" class="btn">Reserve Now</a>
 					    </div>
 	    	</div>
 	    </div>
