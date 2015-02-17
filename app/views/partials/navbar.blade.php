@@ -23,14 +23,14 @@
 		        <nav id="mainmenu" class="mainmenu">
 					<ul>
 						<li class="logo-wrapper"><a href="/index"><header>Rover Sleepover</header></a></li>
-						<li class="active">
+<!-- 						<li class="active">
 							<a href="/index">Home</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="/search">Browse Hosts</a>
 						</li>
 						<li>
-							<a href="/users/create-rover">Sign Up Rover</a>
+							<a href="/users/create-rover">Sign Up Rover!</a>
 						</li>
 						<li>
 							<a href="/users/create-host">Become a Host</a>

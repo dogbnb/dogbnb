@@ -9,7 +9,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>{{{ $user->nickname }}}</h1>
                     </div>
                 </div>
             </div>
@@ -22,7 +21,7 @@
                     <!-- End Product Image & Available Colors -->
                     <!-- Product Summary & Options -->
                     <div class="col-sm-6 product-details">
-                        <h4>LOREM IPSUM DOLOR</h4>
+                        <h2>{{{ $user->nickname }}}</h2>
                         
                         <h5>Quick Overview</h5>
                         <p>
