@@ -31,6 +31,10 @@ Route::get('users/create-rover', 'UsersController@showCreateRover');
 
 Route::get('users/create-rsv', 'UsersController@showCreateReservation');
 
+// Route::get('users/edit-host', 'UsersController@editHost');
+
+// Route::get('users/edit-rover', 'UsersController@editRover');
+
 
 
 
