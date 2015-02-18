@@ -82,11 +82,14 @@ class UsersController extends \BaseController {
 
 		$location = new Location();
 
-		$location->street = Input::get('street');
-		$location->apt = Input::get('apt');
+		$location->street_number = Input::get('street_number');
+		$location->street_name = Input::get('street_name');
 		$location->city = Input::get('city');
 		$location->state = Input::get('state');
 		$location->zip = Input::get('zip');
+		$location->country = Input::get('country');
+		$location->latitude = Input::get('latitude');
+		$location->longitude = Input::get('longitude');
 		$location->description = Input::get('description');
 		$location->user_id = $user->id;
 		$location->save();
