@@ -28,8 +28,9 @@ class HomeController extends \BaseController {
 
 	public function showSearch()
 	{
-		$users = User::with('location')->where('role', '=', 'host')->get();
+		$users = User::with('location')->with('image')->where('role', '=', 'host')->get();
 		return View::make('search')->with('users', $users);
+
 	}
 
 	public function showOwnerProfile()
