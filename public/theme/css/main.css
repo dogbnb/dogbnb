@@ -221,7 +221,7 @@ a:hover {
 .pricing-plan .pricing-plan-price {
   margin: 0 auto 20px;
   width: 90px;
-  height: 90px;
+  height: 225px;
   line-height: 90px;
   font-size: 19px;
   font-weight: bold;
@@ -239,6 +239,16 @@ a:hover {
   font-weight: normal;
   color: rgba(255, 255, 255, 0.9);
 }
+
+.img-circle {
+  border-radius:25px;
+  width:300px;
+  height:225px;
+  position: relative;
+  float: center;
+
+}
+
 .pricing-plan .pricing-plan-features {
   margin-bottom: 20px;
   margin-left: 0;
