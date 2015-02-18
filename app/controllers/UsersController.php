@@ -138,7 +138,7 @@ class UsersController extends \BaseController {
 	{
 		
 		$user = User::findOrFail($id);
-
+		$user = User::with('location', 'location.images')->find($id);
 		return View::make('users.host-profile')->with('user', $user);
 	}
 

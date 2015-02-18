@@ -114,27 +114,14 @@
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
             <div>
-                <img u="image" src="../uploads/house1.jpg" />
-                <img u="thumb" src="../uploads/house1.jpg" />
+                @foreach($user->location->images as $image)
+                
+                    <img u="image" src="{{ $image->img_name}}">
+                    <img u="thumb" src="{{ $image->img_name}}">
+
+                @endforeach
             </div>
-            <div>
-                <img u="image" src="../uploads/house2.jpg" />
-                <img u="thumb" src="../uploads/house2.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../uploads/house3.jpg" />
-                <img u="thumb" src="../uploads/house3.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../uploads/house4.jpg" />
-                <img u="thumb" src="../uploads/house4.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../uploads/house5.jpg" />
-                <img u="thumb" src="../uploads/house5.jpg" />
-            </div>
-            
-        </div>
+        </div>        
         
         <!-- Arrow Navigator Skin Begin -->
         <style>
