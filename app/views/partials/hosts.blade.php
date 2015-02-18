@@ -12,67 +12,24 @@
 							<!-- <div class="ribbon-wrapper">
 								<div class="price-ribbon ribbon-red">Popular</div>
 							</div> -->
-							<h2 class="pricing-plan-title">Name</h2>
-							<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
+						@foreach ($users as $user)
+						<div>
+							<h2 align="center" class="pricing-plan-title">{{{ $user->nickname }}}</h2>
+							<div align="center" class="pricing-plan-price"><img src="/uploads/House1.jpg" align="center" class="img-circle"></div>
+							<br>
 							<!-- Pricing Plan Features -->
+						<p id="user{{$user->id}}">
 							<ul class="pricing-plan-features">
-								<li><strong>Nickname: </strong>Doggy Dayz</li>
-								<li><strong>Max Size Allowed: </strong>Small</li>
-								<li><strong>Description: </strong>Super loads of fun for evaaa</li>
+								<li><strong>Name: </strong> {{{ $user->fname }}} {{{ $user->lname }}}</li>
+								<li><strong>Max Size Allowed: </strong>{{{ $user->size_allowed }}}</li>
+								<li><strong>Description: </strong>{{{ $user->location->description }}}</li>
 							</ul>
-							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
+						</p>
+							<div align="right"><a href="{{$user->id}}" class="btn">Reserve Now</a></div>
 						</div>
+						@endforeach
 			</div>
 		</div>
 						
-		<div class="section">
-	    	<div class="container">
-						<!-- End Pricing Plan -->
-					    <div class="pricing-plan">
-							<h2 class="pricing-plan-title">Name</h2>
-							<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
-								<ul class="pricing-plan-features">
-									<li><strong>Nickname: </strong> users</li>
-									<li><strong>Max Size Allowed: </strong> projects</li>
-									<li><strong>Description: </strong> storage</li>
-								</ul>
-							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
-					    </div>
-		    </div>
-		</div>
 
-	    <div class="section">
-	    	<div class="container">
-					    <!-- Promoted Pricing Plan -->
-					    <div class="pricing-plan pricing-plan-promote">
-								<h2 class="pricing-plan-title">Name</h2>
-								<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
-								<ul class="pricing-plan-features">
-									<li><strong>Nickname: </strong> users</li>
-									<li><strong>Max Size Allowed: </strong> projects</li>
-									<li><strong>Description: </strong> storage</li>
-								</ul>
-							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
-					    </div>
-		    </div>
-		</div>
-
-	    <div class="section">
-	    	<div class="container">
-					    <div class="pricing-plan">
-					    	<!-- Pricing Plan Ribbon -->
-							<!-- <div class="ribbon-wrapper">
-								<div class="price-ribbon ribbon-green">New</div>
-							</div> -->
-							<h2 class="pricing-plan-title">Name</h2>
-							<p class="pricing-plan-price"><img src="/uploads/" class="img-circle"></p>
-								<ul class="pricing-plan-features">
-									<li><strong>Nickname: </strong> users</li>
-									<li><strong>Max Size Allowed: </strong> projects</li>
-									<li><strong>Description: </strong> storage</li>
-								</ul>
-							<div align="right"><a href="users/create-rsv" class="btn">Reserve Now</a></div>
-					    </div>
-	    	</div>
-	    </div>
 	

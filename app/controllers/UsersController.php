@@ -122,6 +122,7 @@ class UsersController extends \BaseController {
 
 		Session::flash('successMessage', 'Your profile has been successfully created. Please login.');
 		return Redirect::to('/login');
+		
 	}
 
 	/**
