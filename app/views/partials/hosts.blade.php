@@ -3,41 +3,38 @@
 <div class="section">
 	<div class="container">
 		<h2>Available Hosts</h2>
-    	<!-- <div class="row"> -->
-    		<!-- Pricing Plans Wrapper -->
-    		<!-- <div class="pricing-wrapper col-md-12"> -->
-				<!-- Pricing Plan -->
-				<div class="pricing-plan">
-					<!-- Pricing Plan Ribbon -->
-					<!-- <div class="ribbon-wrapper">
-						<div class="price-ribbon ribbon-red">Popular</div>
-					</div> -->
+    	
 			@foreach ($users as $user)
-					<div>
-						<h2 align="center" class="pricing-plan-title">{{{ $user->nickname }}}</h2>
-					<p id="user{{$user->id}}">
-						<div class="pricing-plan-price img-circle">
+			
+			<div class="pricing-plan">
+				<div class="text-center">
+					<h2 align="center" class="pricing-plan-title">{{{ $user->nickname }}}</h2>
+				</div>
 
-							@if($user->location->images)
-								<img  class="img-circle" src="{{{ $user->location->images->first()->img_name }}}" >
-							@endif
+				<div class="row">
+				<p id="user{{$user->id}}">
 
-						</div>
-						
-						<br>
-						<!-- Pricing Plan Features -->
+					<div class="col-md-4">
+						@if($user->location->images)
+							<img class="img-circle text-wrap" src="{{{ $user->location->images->first()->img_name }}}" >
+						@endif
+					</div>
+					
+					<div class="col-md-8">
 						<ul class="pricing-plan-features">
 							<li><strong>Name: </strong> {{{ $user->fname }}} {{{ $user->lname }}}</li>
 							<li><strong>Max Size Allowed: </strong>{{{ $user->size_allowed }}}</li>
 							<li><strong>Description: </strong>{{{ $user->location->description }}}</li>
 						</ul>
-					</p>
+				</p>
+					</div>	
 						<div align="right"><a href="/users/{{$user->id}}" class="btn">See Profile</a></div>
-					</div>
-					<br>
-				@endforeach
-
 				</div>
+			</div>
+			@endforeach
 	</div>
 </div>
+
+
+				
 					
