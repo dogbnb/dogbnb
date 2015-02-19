@@ -103,6 +103,9 @@
             //responsive code end
         });
     </script>
+
+
+
     <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
     <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
@@ -120,13 +123,15 @@
 
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
-            <div>
+
+
+
                @foreach($user->location->images as $image)
-               
-                   <img u="image" src="{{ $image->img_name}}">
-                   <img u="thumb" src="{{ $image->img_name}}">
+                <div>
+                   <img u="image" src="{{{ $image->img_name }}}">
+                   <img u="thumb" src="{{{ $image->img_name }}}">
+                </div>
                @endforeach
-           </div>
        </div> 
     </div>
         
