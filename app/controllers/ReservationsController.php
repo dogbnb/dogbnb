@@ -21,7 +21,8 @@ class ReservationsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		$user = User::with('dog')->findOrFail(Auth::id());
+		return View::make('reservations.create')->with('user', $user);
 	}
 
 	/**
@@ -32,7 +33,7 @@ class ReservationsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		
 	}
 
 	/**

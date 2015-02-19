@@ -120,6 +120,18 @@
 
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
+            
+            @foreach($listings as $listing)
+                @foreach($listing->hours() as $hour)
+                    <li>{{ $hour->open_mon }} - {{ $hour->close_mon }}</li>
+                    <li>{{ $hour->open_tue }} - {{ $hour->close_tue }}</li>
+                @endforeach
+            @endforeach
+
+
+
+
+
             <div>
                 <img u="image" src="../uploads/house1.jpg" />
                 <img u="thumb" src="../uploads/house1.jpg" />

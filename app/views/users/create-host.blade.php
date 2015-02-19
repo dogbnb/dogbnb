@@ -216,30 +216,3 @@
 <!-- Bottom script end -->
 @stop
 
-<!-- 
-		<div class="form-group">
-			{{ Form::label('street', 'Street Address') }}
-			{{ Form::text('street', Input::old('street'), array('class'=> 'form-control')) }}
-		</div> -->
-
-
-<!-- 
-		<div class="form-group">
-			{{ Form::label('apt', 'Apartment') }}
-			{{ Form::text('apt', Input::old('apt'), array('class'=> 'form-control')) }}
-		</div>
-
-		<div class="form-group">
-			{{ Form::label('city', 'City') }}
-			{{ Form::text('city', Input::old('city'), array('class'=> 'form-control')) }}
-		</div>
-
-		<div class="form-group">
-			{{ Form::label('state', 'State') }}
-			{{ Form::text('state', Input::old('state'), array('class'=> 'form-control')) }}
-		</div>
-
-		<div class="form-group">
-			{{ Form::label('zip', 'Zip') }}
-			{{ Form::text('zip', Input::old('zip'), array('class'=> 'form-control')) }}
-		</div> -->
