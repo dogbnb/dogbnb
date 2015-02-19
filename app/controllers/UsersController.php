@@ -115,6 +115,12 @@ class UsersController extends \BaseController {
 				//}
 			}
 		}
+
+		$image = new Image();
+
+	    $image->img_name = Input::get('img_name');
+	    $image->location_id = $location->id;
+	    $image->save();
 		
 		$dog = new Dog();
 
@@ -125,7 +131,8 @@ class UsersController extends \BaseController {
 
 		Session::flash('successMessage', 'Your profile has been successfully created. Please login.');
 		return Redirect::to('/login');
-		
+	
+
 	}
 
 	/**
