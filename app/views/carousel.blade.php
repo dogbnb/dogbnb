@@ -7,11 +7,11 @@
 </head>
 <body style="padding: 0; margin: 0; font-family:Arial, Verdana;background-color:#fff;">
     <!-- it works the same with all jquery version from 1.x to 2.x -->
-    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
     <!-- use jssor.slider.mini.js (40KB) instead for release -->
     <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
-    <script type="text/javascript" src="../js/jssor.js"></script>
-    <script type="text/javascript" src="../js/jssor.slider.js"></script>
+    <script type="text/javascript" src="/js/jssor.js"></script>
+    <script type="text/javascript" src="/js/jssor.slider.js"></script>
     <script>
         jQuery(document).ready(function ($) {
             var _SlideshowTransitions = [
@@ -113,46 +113,21 @@
             <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                 background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
             </div>
-            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+            <div style="position: absolute; display: block; background: url(/img/loading.gif) no-repeat center center;
                 top: 0px; left: 0px;width: 100%;height:100%;">
             </div>
         </div>
 
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
-            
-            @foreach($listings as $listing)
-                @foreach($listing->hours() as $hour)
-                    <li>{{ $hour->open_mon }} - {{ $hour->close_mon }}</li>
-                    <li>{{ $hour->open_tue }} - {{ $hour->close_tue }}</li>
+                           @foreach($user->location->images as $image)
+                
+                    <img u="image" src="{{ $image->img_name}}">
+                    <img u="thumb" src="{{ $image->img_name}}">
                 @endforeach
-            @endforeach
-
-
-
-
-
-            <div>
-                <img u="image" src="../uploads/house1.jpg" />
-                <img u="thumb" src="../uploads/house1.jpg" />
             </div>
-            <div>
-                <img u="image" src="../uploads/house2.jpg" />
-                <img u="thumb" src="../uploads/house2.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../uploads/house3.jpg" />
-                <img u="thumb" src="../uploads/house3.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../uploads/house4.jpg" />
-                <img u="thumb" src="../uploads/house4.jpg" />
-            </div>
-            <div>
-                <img u="image" src="../uploads/house5.jpg" />
-                <img u="thumb" src="../uploads/house5.jpg" />
-            </div>
-            
+        </div>        
+
         </div>
         
         <!-- Arrow Navigator Skin Begin -->
@@ -171,7 +146,7 @@
             	position: absolute;
             	cursor: pointer;
             	display: block;
-                background: url(../img/a17.png) no-repeat;
+                background: url(/img/a17.png) no-repeat;
                 overflow:hidden;
             }
             .jssora05l { background-position: -10px -40px; }
@@ -217,7 +192,7 @@
                     border: #000 2px solid;
                 }
                 .jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
-                    background: url(../img/t01.png) center center;
+                    background: url(/img/t01.png) center center;
                     border-width: 0px;
                     top: 2px;
                     left: 2px;
