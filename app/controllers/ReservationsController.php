@@ -22,6 +22,7 @@ class ReservationsController extends \BaseController {
 	public function create()
 	{
 		$user = User::with('dog')->findOrFail(Auth::id());
+		// pass location id of host being reserved
 		return View::make('reservations.create')->with('user', $user);
 	}
 
@@ -33,7 +34,19 @@ class ReservationsController extends \BaseController {
 	 */
 	public function store()
 	{
-		
+		$reservation = new Reservation();
+
+		$reservation->in_at = Input::get('in_at');
+		$reservation->out_at = Input::get('out_at');
+		// capture location id of host
+		$reservation->location_id = ;
+		$reservation->dog_id = $user->dog->id ;
+
+		$reservation->save();
+
+		Session::flash('successMessage', 'Congratulations! Your Rover Sleepover has been scheduled.');
+		// send user to Reservation Confirmation view.
+		return Redirect::to('/login');
 	}
 
 	/**
