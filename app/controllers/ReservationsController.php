@@ -21,10 +21,10 @@ class ReservationsController extends \BaseController {
 	 */
 	public function create($hostId)
 	{
-		$guest = Auth::user();
+		$guest = User::with('dog')->findOrFail(Auth::id());
 		$host  = User::findOrFail($hostId);
 		// pass location id of host being reserved
-		return View::make('reservations.create')->with('user', $user);
+		return View::make('reservations.create')->with('guest', $guest)->with('host', $host);
 	}
 
 	/**
@@ -37,8 +37,14 @@ class ReservationsController extends \BaseController {
 	{
 		$reservation = new Reservation();
 
-		$reservation->in_at = Input::get('in_at');
-		$reservation->out_at = Input::get('out_at');
+		$inAt = strtotime(Input::get('in_at'));
+		$outAt = strtotime(Input::get('out_at'));
+
+		$inAtFormatted = date('Y-m-d', $inAt);
+		$outAtFormatted = date('Y-m-d', $outAt);
+
+		$reservation->in_at = $inAtFormatted;
+		$reservation->out_at = $outAtFormatted;
 		$reservation->location_id = Input::get('location_id');
 		$reservation->dog_id = Input::get('dog_id');
 
@@ -46,7 +52,7 @@ class ReservationsController extends \BaseController {
 
 		Session::flash('successMessage', 'Congratulations! Your Rover Sleepover has been scheduled.');
 		// send user to Reservation Confirmation view.
-		return Redirect::to('/login');
+		return View::make('reservations.confirmation')->with('reservation', $reservation);
 	}
 
 	/**
