@@ -57,8 +57,8 @@ ul.bxslider {
     -moz-box-shadow: 0 0 5px #ccc;
     -webkit-box-shadow: 0 0 5px #ccc;
     box-shadow: 0 0 5px #ccc;
-    border:  5px solid #fff;
-    background: #fff;
+    border:  none;
+    background: transparent;
     .bx-pager,
     .bx-controls-auto {
         position: absolute;
