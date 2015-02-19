@@ -19,9 +19,7 @@
 						<div class="pricing-plan-price">
 
 							@if($user->location->images)
-								@foreach ($user->location->images as $image)
-									<img src="{{{ $image->img_name }}}" >
-								@endforeach
+								<img src="{{{ $user->location->images->first()->img_name }}}" >
 							@endif
 
 						</div>

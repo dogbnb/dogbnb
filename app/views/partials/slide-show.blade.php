@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery Theme - Jssor Slider, Carousel, Slideshow with Javascript Source Code</title>
+</head>
 <body style="padding: 0; margin: 0; font-family:Arial, Verdana;background-color:#fff;">
     <!-- it works the same with all jquery version from 1.x to 2.x -->
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
@@ -114,14 +121,14 @@
         <!-- Slides Container -->
         <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
             <div>
-                @foreach($user->location->images as $image)
-                
-                    <img u="image" src="{{ $image->img_name}}">
-                    <img u="thumb" src="{{ $image->img_name}}">
-
-                @endforeach
-            </div>
-        </div>        
+               @foreach($user->location->images as $image)
+               
+                   <img u="image" src="{{ $image->img_name}}">
+                   <img u="thumb" src="{{ $image->img_name}}">
+               @endforeach
+           </div>
+       </div> 
+    </div>
         
         <!-- Arrow Navigator Skin Begin -->
         <style>
@@ -214,3 +221,4 @@
     </div>
     <!-- Jssor Slider End -->
 </body>
+</html>
