@@ -29,7 +29,7 @@ Route::get('users/create-host', 'UsersController@showCreateHost');
 
 Route::get('users/create-rover', 'UsersController@showCreateRover');
 
-Route::get('reservations/create', 'ReservationsController@create');
+Route::get('reservations/create/{hostId}', 'ReservationsController@create');
 
 
 
