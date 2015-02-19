@@ -165,7 +165,7 @@ a:hover {
   text-align: left;
   background: #fafafa;
   position: relative;
-  width: 40%;
+  width: 90%;
   margin: 10px 1% 10px 0;
   padding: 20px;
   -webkit-border-radius: 7px;
@@ -226,7 +226,10 @@ a:hover {
   font-size: 19px;
   font-weight: bold;
   color: white;
-  background: #595f6b;
+  background: white;
+  display:block;
+  margin-right: auto;
+  margin-left: auto;
   -webkit-border-radius: 45px;
   -webkit-background-clip: padding-box;
   -moz-border-radius: 45px;
@@ -238,13 +241,18 @@ a:hover {
   font-size: 12px;
   font-weight: normal;
   color: rgba(255, 255, 255, 0.9);
+ 
 }
 
 .img-circle {
   border-radius:25px;
   width:300px;
   height:225px;
+}
 
+.text-wrap {
+  float: left;
+  margin: 10px;
 }
 
 .pricing-plan .pricing-plan-features {
@@ -254,12 +262,13 @@ a:hover {
   line-height: 2;
   font-size: 12px;
   color: #999;
-  text-align: left;
   list-style-type: none;
+  clear: both;
 }
 .pricing-plan .pricing-plan-features li strong {
   font-weight: bold;
   color: #888;
+  clear: both;
 }
 .pricing-plan .pricing-plan-promote {
   margin: 0;
@@ -318,7 +327,7 @@ a:hover {
 }
 @media (min-width: 768px) {
   .pricing-plan {
-    width: 55%;
+    width: 100%;
     margin: 5px 0;
     padding: 20px;
     -webkit-border-radius: 0;
