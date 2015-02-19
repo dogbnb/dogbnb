@@ -26,7 +26,11 @@
                     <!-- Host Profile Info -->
                     <div class="col-sm-6 product-details">
                         <h2>{{{ $user->nickname }}}</h2>
-                        
+
+                        @if (Auth::check())
+                            <a href="{{{ action('ReservationsController@create', $user->id)}}}">Reserve a Sleepover!</a>
+                        @endif
+
                         <h5>Quick Overview</h5>
                         <p>
                             I love dogs!!! 

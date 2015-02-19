@@ -29,11 +29,10 @@ Route::get('users/create-host', 'UsersController@showCreateHost');
 
 Route::get('users/create-rover', 'UsersController@showCreateRover');
 
-Route::get('users/create-rsv', 'UsersController@showCreateReservation');
+Route::get('reservations/create/{hostId}', 'ReservationsController@create');
 
-// Route::get('users/edit-host', 'UsersController@editHost');
 
-// Route::get('users/edit-rover', 'UsersController@editRover');
+
 Route::get('carousel', 'UsersController@carousel');
 
 
