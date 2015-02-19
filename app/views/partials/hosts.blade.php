@@ -16,10 +16,10 @@
 					<div>
 						<h2 align="center" class="pricing-plan-title">{{{ $user->nickname }}}</h2>
 					<p id="user{{$user->id}}">
-						<div class="pricing-plan-price">
+						<div class="pricing-plan-price img-circle">
 
 							@if($user->location->images)
-								<img src="{{{ $user->location->images->first()->img_name }}}" >
+								<img  class="img-circle" src="{{{ $user->location->images->first()->img_name }}}" >
 							@endif
 
 						</div>
