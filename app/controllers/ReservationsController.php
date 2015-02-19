@@ -19,9 +19,10 @@ class ReservationsController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($hostId)
 	{
-		$user = User::with('dog')->findOrFail(Auth::id());
+		$guest = Auth::user();
+		$host  = User::findOrFail($hostId);
 		// pass location id of host being reserved
 		return View::make('reservations.create')->with('user', $user);
 	}
@@ -38,9 +39,8 @@ class ReservationsController extends \BaseController {
 
 		$reservation->in_at = Input::get('in_at');
 		$reservation->out_at = Input::get('out_at');
-		// capture location id of host
-		$reservation->location_id = ;
-		$reservation->dog_id = $user->dog->id ;
+		$reservation->location_id = Input::get('location_id');
+		$reservation->dog_id = Input::get('dog_id');
 
 		$reservation->save();
 
