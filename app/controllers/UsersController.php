@@ -110,12 +110,17 @@ class UsersController extends \BaseController {
 
 				    $image = new Image();
 				    $image->img_name = 'uploads/' . $filename;
-				    $image->img_name = Input::get('img_name');
 				    $image->location_id = $location->id;
 				    $image->save();
 				//}
 			}
 		}
+
+		$image = new Image();
+
+	    $image->img_name = Input::get('img_name');
+	    $image->location_id = $location->id;
+	    $image->save();
 		
 		$dog = new Dog();
 

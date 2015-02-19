@@ -16,7 +16,16 @@
 					<div>
 						<h2 align="center" class="pricing-plan-title">{{{ $user->nickname }}}</h2>
 					<p id="user{{$user->id}}">
-						<div class="pricing-plan-price"><img src="{{{ $user->images->image_name }}}" ></div>
+						<div class="pricing-plan-price">
+
+							@if($user->location->images)
+								@foreach ($user->location->images as $image)
+									<img src="{{{ $image->img_name }}}" >
+								@endforeach
+							@endif
+
+						</div>
+						
 						<br>
 						<!-- Pricing Plan Features -->
 						<ul class="pricing-plan-features">
