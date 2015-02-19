@@ -109,7 +109,7 @@ class UsersController extends \BaseController {
 				    $upload_success = $image->move($destinationPath, $filename);
 
 				    $image = new Image();
-				    $image->img_name = 'uploads/' . $filename;
+				    $image->img_name = '/uploads/' . $filename;
 				    $image->location_id = $location->id;
 				    $image->save();
 				//}
