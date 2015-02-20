@@ -8,7 +8,7 @@
 					<div class="testimonial col-md-4 col-sm-6">
 						<!-- Author Photo -->
 						<div class="author-photo">
-							<img src="theme/img/user1.jpg" alt="Author 1">
+							<img class="img-circle" src="theme/img/mike.jpg" alt="Author 1">
 						</div>
 						<div class="testimonial-bubble">
 							<blockquote>
@@ -27,12 +27,12 @@
                     <!-- End Testimonial -->
                     <div class="testimonial col-md-4 col-sm-6">
 						<div class="author-photo">
-							<img src="theme/img/user5.jpg" alt="Author 2">
+							<img src="theme/img/steph.jpg" alt="Author 2">
 						</div>
 						<div class="testimonial-bubble">
 							<blockquote>
 								<p class="quote">
-		                            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo."
+		                            "As a Jr Web Developer, front-end seems to come easily to me and I get a kick out of changing the feel of a page. My background is in Molecular Biology and I enjoy being able to work from the beach."
                         		</p>
                         		<cite class="author-info">
                         			Stephanie Riera
