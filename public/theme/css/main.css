@@ -1376,7 +1376,7 @@ span.color-red {
 +	'In Press' Style
 --------------------------------------------------------------------------*/
 .in-press a {
-  color: #a0a7ac;
+  color: #4f8db3;
   font-size: 1.3em;
   font-family: Georgia, serif;
   line-height: 28px;
@@ -1879,8 +1879,8 @@ span.color-red {
 +	Homepage Slider Style (modified sequencejs CSS). Sorry, no LESS here
 --------------------------------------------------------------------------*/
 .dog-banner {
-  width: 1450px;
-  height: 400px;
+  width: auto;
+  height: 450px;
   background-image: url("/theme/img/dog2.jpg");
   background-size: cover;
   

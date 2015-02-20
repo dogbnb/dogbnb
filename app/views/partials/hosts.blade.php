@@ -2,7 +2,7 @@
 <!-- Pricing Table -->
 <div class="section">
 	<div class="container">
-		<h2>Available Hosts</h2>
+		<h2><i class="fa fa-lg fa-home"></i> Available Hosts</h2>
     	
 			@foreach ($users as $user)
 			
