@@ -32,8 +32,8 @@
 					{{ Form::close() }}
 				</div>
 			</div>
-			<div class="col-md-7">
-				<img src="/theme/img/dog3.jpg">
+			<div class="col-md-7 ">
+				<img class="doglogin" src="/theme/img/dog3.jpg">
 			</div>
 		</div>
 </div>
