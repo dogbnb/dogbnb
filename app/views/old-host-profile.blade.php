@@ -9,30 +9,26 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
+
                         <h1>{{{ $user->nickname }}}</h1>
                     </div>
                 </div>
             </div>
         </div>
-        
+
         <div class="section">
             <div class="container">
                 <div class="row">
-                    @include('partials.slide-show') 
+
                     <!-- End Product Image & Available Colors -->
                     <!-- Product Summary & Options -->
                     <div class="col-sm-6 product-details">
-                        <h4>LOREM IPSUM DOLOR</h4>
+                        <h4>Whatsa Lorem??</h4>
                         
-                        <h5>Quick Overview</h5>
-                        <p>
-                            I love dogs!!! 
+                        <h1>Fast Overview</h1>
+                        
 
-I am a runner and would be happy to bring the pooch along on my morning runs. If they're not up to that, I will take them on extended morning and evening walks throughout Balboa Park. I will also throw around and ball to play fetch. Plus, if they love other dogs, we've got a couple of dog parks to go to. 
-
-Wanna go to the park? 
-
-We are a male couple who have been together for 27 years. Always had pets up until now. We are retired, so travel now. Therefore, we can focus all of our time and attention to your pooch.
+<p>I am a total douchebag and would be happy to bring the pooch along on my morning runs. If they're not up to that, I will take them on extended morning and evening walks throughout Balboa Park. I will also throw around and ball to play fetch. Plus, if they love other dogs, we've got a couple of dog parks to go to. 
                         </p>
                     </div>
                     <!-- End Product Summary & Options -->
@@ -110,6 +106,7 @@ We are a male couple who have been together for 27 years. Always had pets up unt
                 </div>
             </div>
         </div>
+        <div>@include('partials.slide-show') </div>
 
   
 @stop
