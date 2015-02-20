@@ -86,7 +86,7 @@
 
 
 <div class="container">
-<h2>Register Rover</h2>
+<h2><i class="fa fa-lg fa-paw"></i> Register Rover</h2>
 	<div class="signform">
 	{{ Form::open(array('action'=> 'UsersController@store')) }}
 
