@@ -15,7 +15,7 @@
 				<p id="user{{$user->id}}">
 
 					<div class="col-md-4">
-						@if($user->location->images)
+						@if(!$user->location->images->isEmpty())
 							<img class="img-circle text-wrap" src="{{{ $user->location->images->first()->img_name }}}" >
 						@endif
 					</div>

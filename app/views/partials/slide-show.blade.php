@@ -6,17 +6,6 @@
 
     <style>
 
-    /***
- * BxSlider v4.2.3 - Fully loaded, responsive content slider
- * http://bxslider.com
- *
- * Written by: Steven Wanderski, 2014
- * http://stevenwanderski.com
- * (while drinking Belgian ales and listening to jazz)
- *
- * CEO and founder of bxCreative, LTD
- * http://bxcreative.com
- ***/
 
 
 /** RESET AND LAYOUT
@@ -255,4 +244,3 @@ ul.bxslider {
     </script>
 </body>
 </html>
->>>>>>> master
