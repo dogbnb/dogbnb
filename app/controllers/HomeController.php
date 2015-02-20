@@ -26,11 +26,28 @@ class HomeController extends \BaseController {
 		return View::make('login');
 	}
 
+	// public function showSearch()
+	// {
+	// 	$users = User::with('location.images')->where('role', '=', 'host')->get();
+	// 	return View::make('search')->with('users', $users);
+	// }
+
 	public function showSearch()
 	{
 		$users = User::with('location.images')->where('role', '=', 'host')->get();
-		return View::make('search')->with('users', $users);
+		// return View::make('search')->with('users', $users);
 
+		$query = Location::with(['user', 'images']);
+
+    	$query->whereHas('user', function($q) {
+        	$q->where('role', 'host');
+    	});
+
+    	$query->distance(Auth::user()->location->latitude, Auth::user()->location->longitude, 10);
+    	$query->orderBy('distance');
+    	$locations = $query->get();
+    	// return $locations;
+    	return View::make('search')->with('users', $users);
 	}
 
 	public function showOwnerProfile()
