@@ -14,8 +14,8 @@
 
 
 
-<!--         <form method="POST" action="{{{ action('HomeController@showSearch') }}}">
-        {{ Form::token() }} -->
+        <form method="POST" action="{{{ action('HomeController@showSearch') }}}">
+        {{ Form::token() }}
         <p>Check In: <input name="in_at" type="text" class="datepicker"></p>
         <br>
         <p>Check Out: <input name="out_at" type="text" class="datepicker"></p>
