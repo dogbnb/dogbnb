@@ -18,7 +18,8 @@
 							<img class="img-circle text-wrap" src="{{{ $location->images->first()->img_name }}}" >
 						@endif
 					</div>
-					
+											{{ $users->links() }}
+
 					<div class="col-md-8">
 						<ul class="pricing-plan-features">
 							<li><strong>Name: </strong> {{{ $location->user->fname }}} {{{ $location->user->lname }}}</li>
