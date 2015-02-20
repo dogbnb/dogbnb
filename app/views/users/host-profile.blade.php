@@ -14,13 +14,27 @@
                 </div>
             </div>
         </div>
+
+<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px; background-color: black;">
+<div>
+@include('partials.slide-show')
+</div>
+    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
+<!--         <div><img u="image" src="image1.jpg" /></div>
+        <div><img u="image" src="image2.jpg" /></div> -->
+    </div>
+</div>
+
+
+
+
         
         <div class="section">
             <div class="container">
-                <div class="row">
+                
 
-                    <!-- Start Slide Carousel -->
-                    @include('partials.slide-show') 
+<div class="row"></div>
+                <div class="row"> 
 
 
                     <!-- Host Profile Info -->
@@ -28,7 +42,7 @@
                         <h2>{{{ $user->nickname }}}</h2>
 
                         @if (Auth::check())
-                            <a href="{{{ action('ReservationsController@create', $user->id)}}}">Reserve a Sleepover!</a>
+                            <a href="{{{ action('ReservationsController@create', $user->id)}}}" class="btn">Reserve a Sleepover!</a>
                         @endif
 
                         <h5>Quick Overview</h5>
