@@ -35,8 +35,6 @@ class HomeController extends \BaseController {
 	public function showSearch()
 	{
 
-        // dd(Input::all());
-        
         $query = Location::with(['user', 'images']);
 
         $query->whereHas('user', function($q) {

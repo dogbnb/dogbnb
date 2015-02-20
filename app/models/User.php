@@ -23,16 +23,16 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	protected $hidden = array('password', 'remember_token');
 
-// 	public static $rules = array(
-//     'role'    => 'required|max:6',
-//     'fname'   => 'required|max:200',
-//     'lname'   => 'required|max:200',
-//     'phone'   => 'required|max:10',
-//     'email'   => 'required|email',
-//     'nickname' => '',
-//     'size_allowed' => '',
-//     'password'	=> ''
-// );
+	public static $rules = array(
+	    'role'    => 'required|max:6',
+	    'fname'   => 'required|max:200',
+	    'lname'   => 'required|max:200',
+	    'phone'   => 'required|max:10',
+	    'email'   => 'required|email',
+	    'nickname' => '',
+	    'size_allowed' => '',
+	    'password'	=> ''
+);
 
 	public function setPasswordAttribute($value)
 	{

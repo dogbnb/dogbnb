@@ -58,76 +58,76 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
-		// $validator = Validator::make($data = Input::all(), User::$rules);
+		$validator = Validator::make($data = Input::all(), User::$rules);
 
-		// if ($validator->fails())
-		// {
-		// 	return Redirect::back()->withErrors($validator)->withInput();
-		// }
+		if ($validator->fails())
+		{
+			return Redirect::back()->withErrors($validator)->withInput();
+		} else {
 
-		$user = new User();
+			$user = new User();
 
-		$role = Input::get('role');
-		$user->role = $role;
-		$user->password = Input::get('password');
+			$role = Input::get('role');
+			$user->role = $role;
+			$user->password = Input::get('password');
 
-		$user->fname = Input::get('fname');
-		$user->lname = Input::get('lname');
-		$user->phone = Input::get('phone');
-		$user->email = Input::get('email');
-		$user->nickname = Input::get('nickname');
-		$user->size_allowed = Input::get('size-allowed');
-		$user->save();
+			$user->fname = Input::get('fname');
+			$user->lname = Input::get('lname');
+			$user->phone = Input::get('phone');
+			$user->email = Input::get('email');
+			$user->nickname = Input::get('nickname');
+			$user->size_allowed = Input::get('size-allowed');
+			$user->save();
 
 
-		$location = new Location();
+			$location = new Location();
 
-		$location->street_number = Input::get('street_number');
-		$location->street_name = Input::get('street_name');
-		$location->city = Input::get('city');
-		$location->state = Input::get('state');
-		$location->zip = Input::get('zip');
-		$location->country = Input::get('country');
-		$location->latitude = Input::get('latitude');
-		$location->longitude = Input::get('longitude');
-		$location->description = Input::get('description');
-		$location->user_id = $user->id;
-		$location->save();
+			$location->street_number = Input::get('street_number');
+			$location->street_name = Input::get('street_name');
+			$location->city = Input::get('city');
+			$location->state = Input::get('state');
+			$location->zip = Input::get('zip');
+			$location->country = Input::get('country');
+			$location->latitude = Input::get('latitude');
+			$location->longitude = Input::get('longitude');
+			$location->description = Input::get('description');
+			$location->user_id = $user->id;
+			$location->save();
 
-		// Handles Image Uploads
-		if (Input::hasFile('images')) {
+			// Handles Image Uploads
+			if (Input::hasFile('images')) {
 
-			$imageArray = Input::file('images');
-			foreach($imageArray as $image) {
-			  // validating each file.
-			  // $rules = array('file' => 'required'); //'required|mimes:png,jpeg'
-			  // $validator = Validator::make(array('file'=> $file), $rules);
-			  // if($validator->passes()){
-				    // path is root/uploads
-				    $destinationPath = 'uploads';
-				    $filename = $image->getClientOriginalName();
-				    $upload_success = $image->move($destinationPath, $filename);
+				$imageArray = Input::file('images');
+				foreach($imageArray as $image) {
+				  // validating each file.
+				  // $rules = array('file' => 'required'); //'required|mimes:png,jpeg'
+				  // $validator = Validator::make(array('file'=> $file), $rules);
+				  // if($validator->passes()){
+					    // path is root/uploads
+					    $destinationPath = 'uploads';
+					    $filename = $image->getClientOriginalName();
+					    $upload_success = $image->move($destinationPath, $filename);
 
-				    $image = new Image();
-				    $image->img_name = '/uploads/' . $filename;
-				    $image->location_id = $location->id;
-				    $image->save();
-				//}
+					    $image = new Image();
+					    $image->img_name = '/uploads/' . $filename;
+					    $image->location_id = $location->id;
+					    $image->save();
+					//}
+				}
 			}
-		}
 
-		
-		$dog = new Dog();
+			
+			$dog = new Dog();
 
-		$dog->dog_name = Input::get('dog-name');
-		$dog->dog_size = Input::get('dog-size');
-		$dog->user_id = $user->id;
-		$dog->save();
+			$dog->dog_name = Input::get('dog-name');
+			$dog->dog_size = Input::get('dog-size');
+			$dog->user_id = $user->id;
+			$dog->save();
 
-		Session::flash('successMessage', 'Your profile has been successfully created. Please login.');
-		return Redirect::to('/login');
+			Session::flash('successMessage', 'Your profile has been successfully created. Please login.');
+			return Redirect::to('/login');
 	
-
+		}
 	}
 
 	/**
