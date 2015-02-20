@@ -92,83 +92,57 @@
 		<div class="form-group">
 			{{ Form::label('fname', 'First Name') }}
 			{{ Form::text('fname', Input::old('fname'), array('class'=> 'form-control', 'autofocus')) }}
+      {{$errors->first('fname', '<p class="help-block">:message</p>')}}
+
 		</div>
 
 		<div class="form-group">
 			{{ Form::label('lname', 'Last Name') }}
 			{{ Form::text('lname', Input::old('lname'), array('class'=> 'form-control')) }}
+      {{$errors->first('lname', '<p class="help-block">:message</p>')}}
 		</div>
 
 		<div class="form-group">
 			{{ Form::label('phone', 'Phone Number') }}
 			{{ Form::text('phone', Input::old('phone'), array('class'=> 'form-control')) }}
+      {{$errors->first('phone', '<p class="help-block">:message</p>')}}
 		</div>
 
 		<div class="form-group">
 			{{ Form::label('email', 'Email') }}
 			{{ Form::email('email', Input::old('email'), array('class'=> 'form-control')) }}
+      {{$errors->first('email', '<p class="help-block">:message</p>')}}
 		</div>
 
 		<div class="form-group">
 			{{ Form::label('password', 'Password') }}
 			{{ Form::password('password', array('class'=> 'form-control')) }}
+      {{$errors->first('password', '<p class="help-block">:message</p>')}}
+
 		</div>
 		
 		<div class="form-group">
+            {{ Form::label('address', 'Address')}}
             {{ Form::text('autocomplete', null, array('id' => 'autocomplete', 'class' => 'form-group form-control', 'placeholder' => 'Enter your address...')) }}
+            {{$errors->first('address', '<p class="help-block">:message</p>')}}
+
         </div>
 		
-		<div class="form-group">
-            <div class="col-md-4 no-padding">
-                {{ Form::label('street_number', 'Street Number') }}
-                {{ Form::text('street_number', null, array('id' => 'street_number', 'class' => 'form-group form-control', 'disabled' => true)) }}
-                </div>
-
-            <div class="col-md-8 no-padding">
-                {{ Form::label('street_name', 'Street Name') }}
-                {{ Form::text('street_name', null, array('id' => 'route', 'class' => 'form-group form-control', 'disabled' => true)) }}
-            </div>
-            </div>
-
-            <div class="form-group">
-                {{ Form::label('city', 'City') }}
-                {{ Form::text('city', null, array('id' => 'locality', 'class' => 'form-group form-control', 'disabled' => true)) }}
-            </div>
-
-            <div class="form-group">
-                <div class="col-md-4 no-padding">
-                    {{ Form::label('state', 'State') }}
-                    {{ Form::text('state', null, array('id' => 'administrative_area_level_1', 'class' => 'form-group form-control', 'disabled' => true)) }}
-            </div>
-
-                <div class="col-md-8 no-padding">
-                    {{ Form::label('zip', 'Zip') }}
-                    {{ Form::text('zip', null, array('id' => 'postal_code', 'class' => 'form-group form-control', 'disabled' => true)) }}
-                </div>
-            </div>
-
-            <div class="form-group">
-                {{ Form::label('country', 'Country') }}
-                {{ Form::text('country', null, array('id' => 'country', 'class' => 'form-group form-control', 'disabled' => true)) }}
-            </div>
-
-            <div class="form-group">
-                {{ Form::label('latitude', 'Latitude') }}
-                {{ Form::text('latitude', null, array('id' => 'latitude', 'class' => 'form-group form-control', 'disabled' => true)) }}
-            </div>
-
-            <div class="form-group">
-                {{ Form::label('longitude', 'Longitude') }}
-                {{ Form::text('longitude', null, array('id' => 'longitude', 'class' => 'form-group form-control', 'disabled' => true)) }}
-            </div>
-
-
-
+    {{ Form::hidden('street_number', null, array('id' => 'street_number', 'class' => 'form-group form-control', 'disabled' => true)) }}
+    {{ Form::hidden('street_name', null, array('id' => 'route', 'class' => 'form-group form-control', 'disabled' => true)) }}
+    {{ Form::hidden('city', null, array('id' => 'locality', 'class' => 'form-group form-control', 'disabled' => true)) }}
+    {{ Form::hidden('state', null, array('id' => 'administrative_area_level_1', 'class' => 'form-group form-control', 'disabled' => true)) }}
+    {{ Form::hidden('zip', null, array('id' => 'postal_code', 'class' => 'form-group form-control', 'disabled' => true)) }}
+    {{ Form::hidden('country', null, array('id' => 'country', 'class' => 'form-group form-control', 'disabled' => true)) }}
+    {{ Form::hidden('latitude', null, array('id' => 'latitude', 'class' => 'form-group form-control', 'disabled' => true)) }}
+    {{ Form::hidden('longitude', null, array('id' => 'longitude', 'class' => 'form-group form-control', 'disabled' => true)) }}
 
 		<div class="form-group">
 			{{ Form::label('nickname', 'Nickname') }}
 			{{ Form::text('nickname', Input::old('nickname'), array('class'=> 'form-control')) }}
-		</div>
+		  {{$errors->first('nickname', '<p class="help-block">:message</p>')}}
+
+    </div>
 
 		<div class="form-group">
 			{{ Form::label('size-allowed', 'Maximum Size Allowed') }}
@@ -177,11 +151,15 @@
 		   'medium' => '20 - 40lbs.',
 		   'large' => 'Over 40lbs.']
 			) }}
+    {{$errors->first('size-allowed', '<p class="help-block">:message</p>')}}
+
 		</div>
 
 		<div class="form-group">
 		    {{ Form::label('description', 'Description') }}
 		    {{ Form::textarea('description', Input::old('description'), array('class' => "form-control", 'rows' => '4')) }}
+        {{$errors->first('description', '<p class="help-block">:message</p>')}}
+
 		</div>
 
 		<div class="form-group">
