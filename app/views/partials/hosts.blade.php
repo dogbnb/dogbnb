@@ -2,7 +2,7 @@
 <!-- Pricing Table -->
 <div class="section">
 	<div class="container">
-		<h2>Available Hosts</h2>
+		<h2><i class="fa fa-lg fa-home"></i> Available Hosts</h2>
     	
 			@foreach ($users as $user)
 			
@@ -15,7 +15,7 @@
 				<p id="user{{$user->id}}">
 
 					<div class="col-md-4">
-						@if($user->location->images)
+						@if(!$user->location->images->isEmpty())
 							<img class="img-circle text-wrap" src="{{{ $user->location->images->first()->img_name }}}" >
 						@endif
 					</div>

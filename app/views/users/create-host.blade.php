@@ -84,7 +84,7 @@
 @section('content')
 	<title>Become A Host</title>
 <div class="container">
-<h2>Become A Host</h2>
+<h2><i class="fa fa-lg fa-list-alt"></i> Become A Host</h2>
 	<div class="signform">
 	{{ Form::open(array('action'=> 'UsersController@store', 'files' => true)) }}
 
