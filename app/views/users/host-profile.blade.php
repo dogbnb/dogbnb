@@ -2,33 +2,28 @@
 
 @include('partials.navbar')
 
+@section('topscript')
+<style type="text/css">
+#bx-pager img{
+    /*float: left;*/
+    width: 100px;
+}
+</style>
+@stop
+
 @section('content')
  
 <!-- Page Title -->
-        <div class="section section-breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                    <h1>Host Profile</h1>
-                    </div>
-                </div>
-            </div>
+    <div class="section">
+        <div class="container">
+                <h2>Host Profile: {{{ $user->nickname }}}</h2>
+                @include('partials.slide-show')
         </div>
-
-<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px; background-color: black;">
-<div>
-@include('partials.slide-show')
-</div>
-    <div u="slides" style="cursor: move; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 600px; height: 300px;">
-<!--         <div><img u="image" src="image1.jpg" /></div>
-        <div><img u="image" src="image2.jpg" /></div> -->
     </div>
-</div>
 
 
 
 
-        
         <div class="section">
             <div class="container">
                 
@@ -39,7 +34,7 @@
 
                     <!-- Host Profile Info -->
                     <div class="col-sm-6 product-details">
-                        <h2>{{{ $user->nickname }}}</h2>
+                        
                          @if (Auth::check())
                             <a href="{{{ action('ReservationsController@create', $user->id)}}}" class="btn">Reserve a Sleepover!</a>
                         @endif    
@@ -57,7 +52,7 @@
                             <!-- Tab Content (Full Description) -->
                             <div class="tab-content product-detail-info">
                                 <div class="tab-pane active" id="tab1">
-                                    <h4>Host Overview</h4>
+                                
                                     <h4>
                                     {{{ $user->location->description }}} 
                                     </h4>
@@ -109,4 +104,22 @@
         </div>
 
   
+@stop
+
+@section('bottomscript')
+    <script>
+        $(window).load(function() {
+            var minWidth;
+
+            $(".bxslider li img").each(function(index, img) {
+                if (minWidth == undefined || img.width < minWidth) {
+                    minWidth = img.width;
+                }
+            });
+            $('.bxslider').bxSlider({
+                pagerCustom: '#bx-pager',
+                slideWidth: minWidth
+            });
+        });
+    </script>
 @stop

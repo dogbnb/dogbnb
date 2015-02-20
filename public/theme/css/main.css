@@ -251,6 +251,16 @@ a:hover {
   height:225px;
 }
 
+.doglogin {
+
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+
 .text-wrap {
   float: left;
   margin: 10px;
@@ -466,6 +476,8 @@ a:hover {
 }
 .testimonial .author-photo img {
   margin: auto;
+  width: 140px;
+  height: 140px;
   border: 5px solid #FFF;
   -webkit-border-radius: 100px;
   -webkit-background-clip: padding-box;
@@ -480,7 +492,7 @@ a:hover {
 }
 .testimonial .author-info {
   font-weight: 400;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 /*--------------------------------------------------------------------------
 +	Clients Logos Style
