@@ -46,6 +46,7 @@ Route::get('carousel', 'UsersController@carousel');
 Route::get('index', 'HomeController@index');
 
 Route::get('search', 'HomeController@showSearch');
+Route::post('search', 'HomeController@showSearch');
 
 Route::get('searchTest', function() {
 

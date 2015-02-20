@@ -12,18 +12,26 @@
     <div class="container">
         <h1>Find a Host:</h1>
 
-
-
         <form method="POST" action="{{{ action('HomeController@showSearch') }}}">
-        {{ Form::token() }}
-        <p>Check In: <input name="in_at" type="text" class="datepicker"></p>
-        <br>
-        <p>Check Out: <input name="out_at" type="text" class="datepicker"></p>
+            {{ Form::token() }}
+            <p>Check In: <input name="in_at" type="text" class="datepicker"></p>
 
-        <div class="form-group">
-                {{Form::submit('Submit', array('class'=> 'btn btn-primary')) }}
-        </div>
+            <p>Check Out: <input name="out_at" type="text" class="datepicker"></p>
 
+            <div class="form-group">
+                {{ Form::label('radius', 'Within: ') }}
+                {{ Form::select('radius', [
+               '5' => '5 miles',
+               '10' => '10 miles',
+               '20' => '20 miles']
+            ) }}
+            </div>
+
+            <div class="form-group">
+                    {{Form::submit('Submit', array('class'=> 'btn btn-primary')) }}
+            </div>
+
+        </form>
         
     </div>
 </div>

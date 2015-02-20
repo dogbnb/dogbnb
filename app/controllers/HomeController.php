@@ -35,11 +35,14 @@ class HomeController extends \BaseController {
 	public function showSearch()
 	{
 
+        // dd(Input::all());
+        
         $query = Location::with(['user', 'images']);
 
         $query->whereHas('user', function($q) {
             $q->where('role', 'host');
         });
+        
         if (Input::has('search')) {
             $radius = Input::get('radius');
 
