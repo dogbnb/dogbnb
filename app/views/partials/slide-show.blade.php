@@ -19,7 +19,7 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     img {
-        max-width: 100%;
+        max-width: 50%;
         display: block;
     }
 }
@@ -43,7 +43,7 @@ ul.bxslider {
 
 .bx-wrapper {
     /*-moz-box-shadow: 0 0 5px #ccc;*/
-    /*-webkit-box-shadow: 0 0 5px #ccc*/;
+    /*-webkit-box-shadow: 0 0 5px #ccc*/
     /*box-shadow: 0 0 5px #ccc;*/
     border:  none;
     background: transparent;
@@ -51,7 +51,7 @@ ul.bxslider {
     .bx-controls-auto {
         position: absolute;
         bottom: -30px;
-        width: 100%;    
+        width: 50%;    
     }
 }
 
@@ -59,8 +59,8 @@ ul.bxslider {
 .bx-wrapper .bx-loading {
     min-height: 50px;
     background: url(images/bx_loader.gif) center center no-repeat #fff;
-    height: 100%;
-    width: 100%;
+    height: 50%;
+    width: 50%;
     position: absolute;
     top: 0;
     left: 0;
