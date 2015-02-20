@@ -32,7 +32,7 @@ class LocationsTableSeeder extends Seeder {
         $location->country = "United States";
         $location->latitude = 29.375994;
         $location->longitude = -98.515532;
-        $location->description = " work from home and occasionally go into the office (which is close by) but come home for lunch to walk the Dog(s). I have trails and lots of grassy areas for the Dog(s) to be walked. It would rarely be left alone. I lost my dog after 17 years and would love to have the company. I live alone and am very clean and tidy and don't mind cleaning up any messes that may occur.";
+        $location->description = "I work from home and occasionally go into the office (which is close by) but come home for lunch to walk the Dog(s). I have trails and lots of grassy areas for the Dog(s) to be walked. It would rarely be left alone. I lost my dog after 17 years and would love to have the company. I live alone and am very clean and tidy and don't mind cleaning up any messes that may occur.";
         $location->user_id = 7;
         $location->save();
 
