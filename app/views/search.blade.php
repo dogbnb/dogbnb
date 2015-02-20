@@ -4,8 +4,7 @@
 
 @section('content')
 <title>Browse Hosts</title>
+@include('partials.search-form')
+@include('partials.hosts')
 @stop
 
-@include('partials.search-form')
-
-@include('partials.hosts')

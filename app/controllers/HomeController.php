@@ -34,20 +34,21 @@ class HomeController extends \BaseController {
 
 	public function showSearch()
 	{
-		$users = User::with('location.images')->where('role', '=', 'host')->get();
-		// return View::make('search')->with('users', $users);
 
-		$query = Location::with(['user', 'images']);
+        $query = Location::with(['user', 'images']);
 
-    	$query->whereHas('user', function($q) {
-        	$q->where('role', 'host');
-    	});
+        $query->whereHas('user', function($q) {
+            $q->where('role', 'host');
+        });
+        if (Input::has('search')) {
+            $radius = Input::get('radius');
 
-    	$query->distance(Auth::user()->location->latitude, Auth::user()->location->longitude, 10);
-    	$query->orderBy('distance');
-    	$locations = $query->get();
-    	// return $locations;
-    	return View::make('search')->with('users', $users);
+            $query->distance(Auth::user()->location->latitude, Auth::user()->location->longitude, $radius);
+            $query->orderBy('distance');
+        }      
+        
+        $locations = $query->paginate(3);
+        return View::make('search')->with('locations', $locations);
 	}
 
 	public function showOwnerProfile()
