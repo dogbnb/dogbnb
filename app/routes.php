@@ -11,6 +11,12 @@
 |
 */
 
+Route::get('/testLogin', function() {
+    if (Auth::check()) {
+        dd(Auth::id());
+    }
+});
+
 Route::get('/', 'HomeController@index');
 
 Route::get('login', 'HomeController@showLogin');
