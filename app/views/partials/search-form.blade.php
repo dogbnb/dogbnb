@@ -10,18 +10,17 @@
 
 <div class="section">
     <div class="container">
-        <h1>Find a Host:</h1>
+       <h2><i class="fa fa-lg fa-search"></i>  Find a Host:</h2>
 
-        <form method="POST" action="{{{ action('HomeController@showSearch') }}}">
-            {{ Form::token() }}
+        <form method="GET" action="{{{ action('HomeController@showSearch') }}}">
 
-            <div class="form-group">
+<!--             <div class="form-group">
             Check In: <input name="in_at" type="text" class="datepicker">
             </div>
 
             <div class="form-group">
             Check Out: <input name="out_at" type="text" class="datepicker">
-            </div>
+            </div> -->
             <div class="form-inline">
                 {{ Form::label('radius', 'Within: ') }}
                 {{ Form::select('radius', [
