@@ -15,7 +15,7 @@
 
 					<div class="col-md-4">
 						@if(!$location->images->isEmpty())
-							<img class="img-circle text-wrap" src="{{{ $location->images->first()->img_name }}}" >
+							<img class="img-responsive img-circle text-wrap" src="{{{ $location->images->first()->img_name }}}" >
 						@endif
 					</div>
 
@@ -27,12 +27,11 @@
 						</ul>
 				</p>
 					</div>	
-						<div align="right"><a href="/users/{{$location->user_id}}" class="btn">See Profile</a></div>
+						<div align="right"><a href="/users/{{$location->user_id}}" class="btn btn-success">See Profile</a></div>
 				</div>
 			</div>
 			@endforeach
 
-			
 	</div>
 </div>
 
