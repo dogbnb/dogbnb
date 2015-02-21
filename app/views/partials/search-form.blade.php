@@ -14,13 +14,13 @@
 
         <form method="GET" action="{{{ action('HomeController@showSearch') }}}">
 
-<!--             <div class="form-group">
+            <div class="form-group">
             Check In: <input name="in_at" type="text" class="datepicker">
             </div>
 
             <div class="form-group">
             Check Out: <input name="out_at" type="text" class="datepicker">
-            </div> -->
+            </div>
             <div class="form-inline">
                 {{ Form::label('radius', 'Within: ') }}
                 {{ Form::select('radius', [
@@ -43,3 +43,10 @@
 
 @section('bottomscript')
 <script src="/theme/js/jquery-ui/jquery-ui.js"></script>
+<script>
+
+    $(document).ready(function() {
+      $( ".datepicker" ).datepicker();  
+    });
+
+</script>
