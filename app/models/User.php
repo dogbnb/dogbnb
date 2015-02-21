@@ -32,7 +32,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	    'nickname' => '',
 	    'size_allowed' => '',
 	    'password'	=> ''
-);
+	);
 
 	public function setPasswordAttribute($value)
 	{

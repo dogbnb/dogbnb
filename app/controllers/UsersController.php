@@ -125,7 +125,7 @@ class UsersController extends \BaseController {
 			$dog->save();
 
 			Session::flash('successMessage', 'Your profile has been successfully created. Please login.');
-			return Redirect::to('/login');
+			return Redirect::to('/search');
 	
 		}
 	}
