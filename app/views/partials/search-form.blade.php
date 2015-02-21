@@ -1,13 +1,3 @@
-@section('css')
-<link rel="stylesheet" type="text/css" href="/theme/js/jquery-ui/jquery-ui.theme.min.css">
-<link rel="stylesheet" type="text/css" href="/theme/js/jquery-ui/jquery-ui.css">
-@stop
-
-@section('topscript')
-@stop
-
-@section('content')
-
 <div class="section">
     <div class="container">
        <h2><i class="fa fa-lg fa-search"></i>  Find a Host:</h2>
@@ -39,14 +29,5 @@
     </div>
 </div>
 
-@stop
 
-@section('bottomscript')
-<script src="/theme/js/jquery-ui/jquery-ui.js"></script>
-<script>
 
-    $(document).ready(function() {
-      $( ".datepicker" ).datepicker();  
-    });
-
-</script>

@@ -19,7 +19,10 @@ Route::get('/testLogin', function() {
 
 Route::get('/map', function()
 {
-    return View::make('map');
+    $locations = Location::whereHas('user', function($q) {
+        $q->where('role', 'host');
+    })->get();
+    return View::make('map')->with('locations', $locations);
 });
 
 Route::get('/', 'HomeController@index');
