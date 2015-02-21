@@ -8,7 +8,7 @@
 					<div class="testimonial col-md-4 col-sm-6">
 						<!-- Author Photo -->
 						<div class="author-photo">
-							<img class="img-circle" src="theme/img/mike.jpg" alt="Author 1">
+							<img class="img-responsive" src="theme/img/mike.jpg" alt="Author 1">
 						</div>
 						<div class="testimonial-bubble">
 							<blockquote>
@@ -27,7 +27,7 @@
                     <!-- End Testimonial -->
                     <div class="testimonial col-md-4 col-sm-6">
 						<div class="author-photo">
-							<img src="theme/img/steph.jpg" alt="Author 2">
+							<img class="img-responsive" src="theme/img/steph.jpg" alt="Author 2">
 						</div>
 						<div class="testimonial-bubble">
 							<blockquote>
@@ -43,7 +43,7 @@
                     </div>
 					<div class="testimonial col-md-4 col-sm-6">
 						<div class="author-photo">
-							<img src="theme/img/user2.jpg" alt="Author 3">
+							<img class="img-responsive" src="theme/img/calvin.jpg" alt="Author 3">
 						</div>
 						<div class="testimonial-bubble">
 							<blockquote>

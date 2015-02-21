@@ -16,7 +16,7 @@
 <!-- Page Title -->
     <div class="section">
         <div class="container">
-                <h2>Host Profile: {{{ $user->nickname }}}</h2>
+                <h2><i class="fa fa-lg fa-suitcase"></i> Host Profile: {{{ $user->nickname }}}</h2>
                 @include('partials.slide-show')
         </div>
     </div>
