@@ -14,19 +14,22 @@
 
 <div class="section">
 	<div class="container">
-		<h2>Schedule A Sleepover - Choose your dates:</h2>
+		<h2><i class="fa fa-lg fa-suitcase"></i> Schedule A Sleepover - Choose your dates:</h2>
 
 
+		<div class="col-md-5">
+		
+				<form method="POST" action="{{{ action('ReservationsController@store') }}}">
+		 		{{ Form::token() }}
+				<p>Check In: <input name="in_at" type="text" class="datepicker"></p>
+				<br>
+				<p>Check Out: <input name="out_at" type="text" class="datepicker"></p>
+				<input type="hidden" value="{{{ $guest->dog->id}}}" name="dog_id">
+				<input type="hidden" value="{{{ $host->location->id}}}" name="location_id">
 
-		<form method="POST" action="{{{ action('ReservationsController@store') }}}">
- 		{{ Form::token() }}
-		<p>Check In: <input name="in_at" type="text" class="datepicker"></p>
-		<br>
-		<p>Check Out: <input name="out_at" type="text" class="datepicker"></p>
-		<input type="hidden" value="{{{ $guest->dog->id}}}" name="dog_id">
-		<input type="hidden" value="{{{ $host->location->id}}}" name="location_id">
-		<div class="form-group">
-				{{Form::submit('Submit', array('class'=> 'btn btn-primary')) }}
+				<div class="form-group pull-right">
+						{{Form::submit('Submit', array('class'=> 'btn btn-primary')) }}
+				</div>
 		</div>
 
 		
