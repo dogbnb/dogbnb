@@ -12,26 +12,31 @@
 
 @section('content')
 
-<div class="section">
-	<div class="container">
-		<h2>Schedule A Sleepover - Choose your dates:</h2>
-
-
-
-		<form method="POST" action="{{{ action('ReservationsController@store') }}}">
- 		{{ Form::token() }}
-		<p>Check In: <input name="in_at" type="text" class="datepicker"></p>
-		<br>
-		<p>Check Out: <input name="out_at" type="text" class="datepicker"></p>
-		<input type="hidden" value="{{{ $guest->dog->id}}}" name="dog_id">
-		<input type="hidden" value="{{{ $host->location->id}}}" name="location_id">
-		<div class="form-group">
-				{{Form::submit('Submit', array('class'=> 'btn btn-primary')) }}
+<div class="container">
+	<h2><i class="fa fa-lg fa-suitcase"></i> Schedule A Sleepover - Choose your dates:</h2>
+		<div class="row">
+			<div class="col-md-5">
+				<div class="signform">
+					<form method="POST" action="{{{ action('ReservationsController@store') }}}">
+			 		{{ Form::token() }}
+					<p><strong>Check In: </strong><input name="in_at" type="text" class="datepicker"></p>
+					<br>
+					<p><strong>Check Out: </strong><input name="out_at" type="text" class="datepicker"></p>
+					<input type="hidden" value="{{{ $guest->dog->id}}}" name="dog_id">
+					<input type="hidden" value="{{{ $host->location->id}}}" name="location_id">
+				<br>
+					<div class="form-group pull-right">
+						{{Form::submit('Submit', array('class'=> 'btn btn-primary')) }}
+					</div>
+					{{Form::close()}}
+				</div>
+			</div>
+			<div class="col-md-7 ">
+				<img class="doglogin img-responsive" src="/theme/img/suitcase.jpg">
+			</div>
 		</div>
-
-		
-	</div>
 </div>
+
 
 @stop
 
