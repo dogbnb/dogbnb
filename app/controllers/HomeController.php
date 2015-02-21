@@ -40,15 +40,16 @@ class HomeController extends \BaseController {
         $query->whereHas('user', function($q) {
             $q->where('role', 'host');
         });
-        
-        if (Input::has('search')) {
+
+        if (Input::has('radius')) {
             $radius = Input::get('radius');
 
             $query->distance(Auth::user()->location->latitude, Auth::user()->location->longitude, $radius);
             $query->orderBy('distance');
-        }      
+        }
+
         
-        $locations = $query->paginate(10);
+        $locations = $query->get();
         return View::make('search')->with('locations', $locations);
 	}
 
@@ -78,12 +79,11 @@ class HomeController extends \BaseController {
     		Session::flash('successMessage', "You've logged in!");
 
     		if (Auth::user()->role == 'owner') {
-    			// return Redirect::intended('owner-profile.blade.php');
-    			return View::make('owner-profile');
+                return Redirect::to('/search');
 
     		} elseif (Auth::user()->role == 'host') {
-    			// return Redirect::intended('host-profile.blade.php');
-    			return View::make('host-profile');
+    			// return View::make('host-profile');
+                return Redirect::to('/search');
 
     		}
 
