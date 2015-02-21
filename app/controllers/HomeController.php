@@ -26,11 +26,6 @@ class HomeController extends \BaseController {
 		return View::make('login');
 	}
 
-	// public function showSearch()
-	// {
-	// 	$users = User::with('location.images')->where('role', '=', 'host')->get();
-	// 	return View::make('search')->with('users', $users);
-	// }
 
 	public function showSearch()
 	{

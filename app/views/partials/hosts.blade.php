@@ -1,5 +1,5 @@
 
-<!-- Pricing Table -->
+<!-- Host Listing -->
 <div class="section">
 	<div class="container">
 		<h2><i class="fa fa-lg fa-home"></i> Available Hosts</h2>
