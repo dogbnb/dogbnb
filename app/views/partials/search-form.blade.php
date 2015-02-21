@@ -14,11 +14,15 @@
 
         <form method="POST" action="{{{ action('HomeController@showSearch') }}}">
             {{ Form::token() }}
-            <p>Check In: <input name="in_at" type="text" class="datepicker"></p>
-
-            <p>Check Out: <input name="out_at" type="text" class="datepicker"></p>
 
             <div class="form-group">
+            Check In: <input name="in_at" type="text" class="datepicker">
+            </div>
+
+            <div class="form-group">
+            Check Out: <input name="out_at" type="text" class="datepicker">
+            </div>
+            <div class="form-inline">
                 {{ Form::label('radius', 'Within: ') }}
                 {{ Form::select('radius', [
                '5' => '5 miles',

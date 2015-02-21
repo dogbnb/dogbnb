@@ -122,10 +122,43 @@ class UserTableSeeder extends Seeder
         $user->lname = "Chisholm";
         $user->phone = "2108532855";
         $user->email = "LonnieJchisholm@gmail.com";
-        $user->nickname = "Pugs and kisses, we love dog!";
+        $user->nickname = "Pugs and kisses, we love dogs!";
         $user->size_allowed = "Medium";
         $user->password = "password";
         $user->save();
+
+        // $user = new User();
+        // $user->role = "host";
+        // $user->fname = "Jeff";
+        // $user->lname = "Lebowski";
+        // $user->phone = "2105555555";
+        // $user->email = "elduderino@letsgobowling.com";
+        // $user->nickname = "The Dude's Dog Den";
+        // $user->size_allowed = "large";
+        // $user->password = "password";
+        // $user->save();
+
+        // $user = new User();
+        // $user->role = "host";
+        // $user->fname = "Walter";
+        // $user->lname = "Sobchak";
+        // $user->phone = "2105555555";
+        // $user->email = "wsobchak@gmail.com";
+        // $user->nickname = "Let Me Take Your Dog Bowling!";
+        // $user->size_allowed = "small";
+        // $user->password = "password";
+        // $user->save();
+
+        // $user = new User();
+        // $user->role = "host";
+        // $user->fname = "Donny";
+        // $user->lname = "Kerabatsos";
+        // $user->phone = "2105555555";
+        // $user->email = "donny@wholovesbowling.com";
+        // $user->nickname = "I Love Dogs, And Bowling";
+        // $user->size_allowed = "Medium";
+        // $user->password = "password";
+        // $user->save();
 
 
     }

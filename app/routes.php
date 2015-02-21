@@ -17,6 +17,11 @@ Route::get('/testLogin', function() {
     }
 });
 
+Route::get('/map', function()
+{
+    return View::make('map');
+});
+
 Route::get('/', 'HomeController@index');
 
 Route::get('login', 'HomeController@showLogin');

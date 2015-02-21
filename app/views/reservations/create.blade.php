@@ -38,8 +38,6 @@
 @section('bottomscript')
 <script src="/theme/js/jquery-ui/jquery-ui.js"></script>
 
-
-
 <script>
 
 	$(document).ready(function() {

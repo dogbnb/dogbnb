@@ -48,7 +48,7 @@ class HomeController extends \BaseController {
             $query->orderBy('distance');
         }      
         
-        $locations = $query->paginate(3);
+        $locations = $query->paginate(10);
         return View::make('search')->with('locations', $locations);
 	}
 
