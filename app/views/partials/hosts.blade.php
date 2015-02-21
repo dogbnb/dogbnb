@@ -32,9 +32,7 @@
 			</div>
 			@endforeach
 
-			<div>
-				{{ $locations->appends(array('search' => Input::get('search')))->links() }}
-			</div>
+			
 	</div>
 </div>
 
