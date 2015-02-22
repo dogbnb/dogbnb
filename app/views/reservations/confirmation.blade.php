@@ -10,6 +10,7 @@
 			<div class="col-md-5">
 
 				<h4><strong>Congratulations! Your sleepover for {{{$reservation->dog->dog_name}}} has been scheduled!<strong></h4>
+
 				<br>
 				<p><h4><strong>Host: </strong> {{{$reservation->location->user->nickname}}}</h4></p>
 				<p><h4><strong>Check In: </strong>{{{$reservation->in_at}}}</h4></p>

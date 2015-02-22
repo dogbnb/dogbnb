@@ -62,20 +62,21 @@
                                 <div class="tab-pane" id="tab2">
                                     <table>
                                         <tr>
-                                            <td>Location Type</td>
+
+                                            <td>Name:</td>
+                                            <td>{{{ $user->fname }}} {{{ $user->lname }}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email:</td>
+                                            <td>{{{ $user->email }}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Max. Size Allowed:</td>
+                                            <td>{{{ $user->size_allowed }}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Apartment/Home:</td>
                                             <td>Home</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Outdoor Play Area</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>24/7 Supervision</td>
-                                            <td>Yes</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Daily Rate</td>
-                                            <td>$35/day</td>
                                         </tr>
                                     </table>
                                 </div>
