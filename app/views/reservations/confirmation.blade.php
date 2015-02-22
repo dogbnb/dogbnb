@@ -8,9 +8,10 @@
 	<h2><i class="fa fa-lg fa-check"></i> Reservation Confirmation</h2>
 		<div class="row">
 			<div class="col-md-5">
-				<p><h4><strong>Rover: </strong>$dogs->dog_name</h4></p>
-				<p><h4><strong>Host: </strong> $location->user->nickname</h4></p>
+
+				<h4><strong>Congratulations! Your sleepover for {{{$reservation->dog->dog_name}}} has been scheduled!<strong></h4>
 				<br>
+				<p><h4><strong>Host: </strong> {{{$reservation->location->user->nickname}}}</h4></p>
 				<p><h4><strong>Check In: </strong>{{{$reservation->in_at}}}</h4></p>
 				<p><h4><strong>Check Out: </strong>{{{$reservation->out_at}}}</h4></p>
 
