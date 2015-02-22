@@ -58,7 +58,12 @@ class UsersController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make($data = Input::all(), User::$rules);
+		$rules = User::$rules;
+		$role = Input::get('role');
+		// rules [
+		// 	add specific validation rules based on User role.
+		// ]
+		$validator = Validator::make($data = Input::all(), $rules);
 
 		if ($validator->fails())
 		{
@@ -67,7 +72,7 @@ class UsersController extends \BaseController {
 
 			$user = new User();
 
-			$role = Input::get('role');
+			
 			$user->role = $role;
 			$user->password = Input::get('password');
 
@@ -125,7 +130,7 @@ class UsersController extends \BaseController {
 			$dog->save();
 
 			Session::flash('successMessage', 'Your profile has been successfully created. Please login.');
-			return Redirect::to('/search');
+			return Redirect::to('/login');
 	
 		}
 	}

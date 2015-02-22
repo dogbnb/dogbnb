@@ -49,7 +49,7 @@ class ReservationsController extends \BaseController {
 		$reservation->dog_id = Input::get('dog_id');
 
 		$reservation->save();
-
+				// dd($reservation);
 		Session::flash('successMessage', 'Congratulations! Your Rover Sleepover has been scheduled.');
 		// send user to Reservation Confirmation view.
 		return View::make('reservations.confirmation')->with('reservation', $reservation);
