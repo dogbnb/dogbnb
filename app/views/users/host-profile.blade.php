@@ -62,6 +62,7 @@
                                 <div class="tab-pane" id="tab2">
                                     <table>
                                         <tr>
+
                                             <td>Name:</td>
                                             <td>{{{ $user->fname }}} {{{ $user->lname }}}</td>
                                         </tr>
