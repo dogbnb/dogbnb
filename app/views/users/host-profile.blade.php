@@ -62,36 +62,20 @@
                                 <div class="tab-pane" id="tab2">
                                     <table>
                                         <tr>
-                                            <td>Total sensor Pixels (megapixels)</td>
-                                            <td>Approx. 16.7</td>
+                                            <td>Name:</td>
+                                            <td>{{{ $user->fname }}} {{{ $user->lname }}}</td>
                                         </tr>
                                         <tr>
-                                            <td>Effective Pixels (megapixels)</td>
-                                            <td>Approx. 16.1</td>
+                                            <td>Email:</td>
+                                            <td>{{{ $user->email }}}</td>
                                         </tr>
                                         <tr>
-                                            <td>Automatic White Balance</td>
-                                            <td>YES</td>
+                                            <td>Max. Size Allowed:</td>
+                                            <td>{{{ $user->size_allowed }}}</td>
                                         </tr>
                                         <tr>
-                                            <td>White balance: preset selection</td>
-                                            <td>Daylight, Shade, Cloudy, Incandescent, Fluorescent, Flash</td>
-                                        </tr>
-                                        <tr>
-                                            <td>White balance: custom setting</td>
-                                            <td>YES</td>
-                                        </tr>
-                                        <tr>
-                                            <td>White balance: types of color temperature</td>
-                                            <td>YES (G7 to M7,15-step) (A7 to B7,15-step)</td>
-                                        </tr>
-                                        <tr>
-                                            <td>White balance bracketing</td>
-                                            <td>NO</td>
-                                        </tr>
-                                        <tr>
-                                            <td>ISO Sensitivity Setting</td>
-                                            <td>ISO100 - 25600 equivalent</td>
+                                            <td>Apartment/Home:</td>
+                                            <td>Home</td>
                                         </tr>
                                     </table>
                                 </div>

@@ -19,6 +19,8 @@
     #map-canvas {
         margin-bottom: 10px; 
         height: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
     #autocomplete {
         width: 50%;

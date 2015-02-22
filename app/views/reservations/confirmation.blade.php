@@ -8,7 +8,7 @@
 	<h2><i class="fa fa-lg fa-check"></i> Reservation Confirmation</h2>
 		<div class="row">
 			<div class="col-md-5">
-				<p><h4><strong>Rover: </strong>$dogs->dog_name</h4></p>
+				<p><h4><strong>Rover: </strong> $users->dog->dog_name </h4></p>
 				<p><h4><strong>Host: </strong> $location->user->nickname</h4></p>
 				<br>
 				<p><h4><strong>Check In: </strong>{{{$reservation->in_at}}}</h4></p>
