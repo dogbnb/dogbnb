@@ -7,7 +7,7 @@
 	        			<div class="service-wrapper">
 		        			<i class="fa fa-calendar fa-3x"></i>
 		        			<h3>Easy Communication</h3>
-		        			<p>All you need is a simple profile for your Rover to schedule a sleepover with a host. You can change dates if you need to and have access to the hosts contact information.</p>		        			
+		        			<p>All you need is a simple profile for your Rover to schedule a sleepover with a host. You can change dates if you need to and have access to the hosts contact information. Scheduling a sleepover is as simple as a few clicks.</p>		        			
 		        		</div>
 	        		</div>
 	        		<div class="col-md-4 col-sm-6">
