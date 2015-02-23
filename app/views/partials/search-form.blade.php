@@ -7,12 +7,13 @@
                 <form method="GET" action="{{{ action('HomeController@showSearch') }}}">
 
                     <div class="form-group">
-                    Check In: <input name="in_at" type="text" class="datepicker">
+                        <p><strong>Check In: </strong></p>
+                        <p><input name="in_at" type="text" class="datepicker"></p>
+                        <p><strong>Check Out: </strong></p>
+                        <p><input name="out_at" type="text" class="datepicker"></p>
                     </div>
+                <br>
 
-                    <div class="form-group">
-                    Check Out: <input name="out_at" type="text" class="datepicker">
-                    </div>
                     <div class="form-inline">
                         {{ Form::label('radius', 'Within: ') }}
                         {{ Form::select('radius', [

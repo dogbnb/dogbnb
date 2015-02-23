@@ -19,9 +19,12 @@
 				<div class="signform">
 					<form method="POST" action="{{{ action('ReservationsController@store') }}}">
 			 		{{ Form::token() }}
-					<p><strong>Check In: </strong><input name="in_at" type="text" class="datepicker"></p>
+					<p><strong>Check In: </strong></p>
+						<p><input name="in_at" type="text" class="datepicker"></p>
 					<br>
-					<p><strong>Check Out: </strong><input name="out_at" type="text" class="datepicker"></p>
+					<p><strong>Check Out: </strong></p>
+					<p><input name="out_at" type="text" class="datepicker"></p>
+					
 					<input type="hidden" value="{{{ $guest->dog->id}}}" name="dog_id">
 					<input type="hidden" value="{{{ $host->location->id}}}" name="location_id">
 				<br>
