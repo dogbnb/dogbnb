@@ -47,12 +47,11 @@
                             <!-- Tabs -->
                             <ul class="nav nav-tabs product-details-nav">
                                 <li class="active"><a href="#tab1" data-toggle="tab">Host Overview</a></li>
-                                <li><a href="#tab2" data-toggle="tab">Location Details</a></li>
+                                <li><a href="#tab2" data-toggle="tab">Details</a></li>
                             </ul>
                             <!-- Tab Content (Full Description) -->
                             <div class="tab-content product-detail-info">
                                 <div class="tab-pane active" id="tab1">
-                                
                                     <h4>
                                     {{{ $user->location->description }}} 
                                     </h4>
