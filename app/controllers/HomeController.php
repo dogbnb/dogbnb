@@ -48,22 +48,6 @@ class HomeController extends \BaseController {
         return View::make('search')->with('locations', $locations);
 	}
 
-	public function showOwnerProfile()
-	{
-		return View::make('owner-profile');
-	}
-
-	public function showHostProfile()
-	{
-		return View::make('host-profile');
-	}
-
-	public function distanceFinder()
-	{
-		return View::make('distance-finder');
-	}
-
-
 
 	public function doLogin(){
 		$email = Input::get('email');
