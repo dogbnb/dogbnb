@@ -2,7 +2,7 @@
 		<!-- About Us -->
 	    <div class="section">
 			<div class="container">
-				<h2>About Us</h2>
+				<h2>About the Developers</h2>
 				<div class="row">
 					<!-- Testimonial -->
 					<div class="testimonial col-md-4 col-sm-6">
@@ -14,7 +14,7 @@
 							<blockquote>
 								<!-- Quote -->
 								<p class="quote">
-		                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut."
+		                            "I have a passion for technology and helping others. Coding has opened up opportunities for me to follow my passion."
                         		</p>
                         		<!-- Author Info -->
                         		<cite class="author-info">
