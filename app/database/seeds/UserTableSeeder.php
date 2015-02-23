@@ -65,9 +65,9 @@ class UserTableSeeder extends Seeder
         $user->role = "host";
         $user->fname = "Eric";
         $user->lname = "Jones";
-        $user->phone = "2104523954";
+        $user->phone = "2105555555";
         $user->email = "EricLJones@jourrapide.com";
-        $user->nickname = "Doggie Playtime";
+        $user->nickname = "The Dog Haus";
         $user->size_allowed = "Large";
         $user->password = "password";
         $user->save();
@@ -76,9 +76,9 @@ class UserTableSeeder extends Seeder
         $user->role = "host";
         $user->fname = "Thomas";
         $user->lname = "Hutchinson";
-        $user->phone = "2104592143";
+        $user->phone = "2105555555";
         $user->email = "ThomasKHutchinson@dayrep.com";
-        $user->nickname = "Paw-fect dog sitting";
+        $user->nickname = "No Cages Allowed!";
         $user->size_allowed = "Medium";
         $user->password = "password";
         $user->save();
@@ -87,9 +87,9 @@ class UserTableSeeder extends Seeder
         $user->role = "host";
         $user->fname = "Heather";
         $user->lname = "Brummit";
-        $user->phone = "2108651539";
+        $user->phone = "2105555555";
         $user->email = "HeatherGBrummitt@jourrapride.com";
-        $user->nickname = "Healthy-Furkids";
+        $user->nickname = "All Dogs Welcome!";
         $user->size_allowed = "Medium";
         $user->password = "password";
         $user->save();
@@ -98,9 +98,9 @@ class UserTableSeeder extends Seeder
         $user->role = "host";
         $user->fname = "Jarrod";
         $user->lname = "Howe";
-        $user->phone = "2102384927";
+        $user->phone = "2105555555";
         $user->email = "JarrodEhowe@armyspy.com";
-        $user->nickname = "Dog Tails";
+        $user->nickname = "Jarrod's Pooch Playpen";
         $user->size_allowed = "Large";
         $user->password = "password";
         $user->save();
@@ -109,9 +109,9 @@ class UserTableSeeder extends Seeder
         $user->role = "host";
         $user->fname = "Deirdre";
         $user->lname = "Webb";
-        $user->phone = "2104856492";
+        $user->phone = "2105555555";
         $user->email = "DeirdeMWebb@gmail.com";
-        $user->nickname = "Paws 4 Fun";
+        $user->nickname = "Camp Minnie";
         $user->size_allowed = "Large";
         $user->password = "password";
         $user->save();
@@ -120,10 +120,10 @@ class UserTableSeeder extends Seeder
         $user->role = "host";
         $user->fname = "Lonnie";
         $user->lname = "Chisholm";
-        $user->phone = "2108532855";
+        $user->phone = "210555555";
         $user->email = "LonnieJchisholm@gmail.com";
-        $user->nickname = "Pugs and kisses, we love dogs!";
-        $user->size_allowed = "Medium";
+        $user->nickname = "TLC For Your Aging Best Friend";
+        $user->size_allowed = "Large";
         $user->password = "password";
         $user->save();
 
