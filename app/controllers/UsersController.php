@@ -7,10 +7,6 @@ class UsersController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function carousel()
-	{
-		return View::make('carousel');
-	}
 
 	public function index()
 	{

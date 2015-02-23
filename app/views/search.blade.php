@@ -150,7 +150,10 @@
 <title>Browse Hosts</title>
 
 @section('content')
+
+@if (Auth::check())
 @include('partials.search-form')
+@endif
 
 @include('partials.map')
 @include('partials.hosts')
