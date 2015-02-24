@@ -36,7 +36,7 @@
                     <div class="col-sm-6 product-details">
                         
                          @if (Auth::check())
-                            <a href="{{{ action('ReservationsController@create', $user->id)}}}" class="btn">Reserve a Sleepover!</a>
+                            <a href="{{{ action('ReservationsController@create', $user->id)}}}" class="btn">Schedule a Sleepover!</a>
                         @endif    
                     </div>
                     <!-- End Product Summary & Options -->
