@@ -1891,8 +1891,8 @@ span.color-red {
 +	Homepage Slider Style (modified sequencejs CSS). Sorry, no LESS here
 --------------------------------------------------------------------------*/
 .dog-banner {
-  width: auto;
-  height: 650px;
+  width: 100%;
+  height: 400px;
   background-image: url("/theme/img/dog2.jpg");
   background-size: cover;
   
