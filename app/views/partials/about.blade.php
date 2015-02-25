@@ -48,7 +48,7 @@
 						<div class="testimonial-bubble">
 							<blockquote>
 								<p class="quote">
-		                            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+		                            "I love that sense of accomplishment when I finish something and it’s out there and people can see and use it. I view coding not just as a skill but as a craft - and a passion."
                         		</p>
                         		<cite class="author-info">
                         			Calvin Glover
