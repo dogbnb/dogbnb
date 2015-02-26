@@ -8,8 +8,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Rover Sleepover</title>
         <meta name="description" content="">
+{{--         <meta name="viewport" content="width=device-width, initial-scale=1"> --}}
         <meta name="viewport" content="width=device-width">
-
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="/theme/css/bootstrap.min.css">
         <link rel="stylesheet" href="/theme/css/icomoon-social.css">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
