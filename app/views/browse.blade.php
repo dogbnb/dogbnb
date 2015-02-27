@@ -70,7 +70,68 @@
 @section('bottomscript')
 
 {{-- Map Bottom Script --}}
-{{-- Google Map js here --}}
+<script type="text/javascript">
+    var locations = {{ $locations->toJson() }};
+
+    $(document).ready(function () {
+        // Initialize map
+        var mapOptions = {
+          center: new google.maps.LatLng(29.4814305, -98.5144044),
+          zoom: 10
+        };
+
+        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        var markers = [];
+        for (var i = 0; i < locations.length; i++) {
+            console.log(locations[i].latitude);
+            console.log(locations[i].longitude);
+
+            var marker = new google.maps.LatLng(locations[i].latitude, locations[i].longitude);
+            addMarker(marker);
+        }
+
+        // Add a marker to the map and push to the array.
+        function addMarker(location) {
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map,
+                draggable: false,
+                animation: google.maps.Animation.DROP
+            });
+            
+            markers.push(marker);
+        }
+        // Removes the markers from the map, but keeps them in the array.
+        function clearMarkers() {
+            setAllMap(null);
+        }
+        // Deletes all markers in the array by removing references to them.
+        function deleteMarkers() {
+            clearMarkers();
+            markers = [];
+        }
+        // Autocomplete        
+        initialize();
+        $('#autocomplete').focus(geolocate);
+        $('#btn-plot').click(function(event) {
+            event.preventDefault();
+            // Get address value from input
+            var address = $('#autocomplete').val();
+            
+            // Redeclare geocoder variable
+            var geocoder = new google.maps.Geocoder();
+            
+            // Geocode address
+            geocoder.geocode({ 'address': address }, function(result, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var latLngObj = result[0]["geometry"]["location"];
+                    // add marker to array
+                    addMarker(latLngObj);
+                }
+            });
+        });
+    });
+</script>
 {{-- End Map Bottom Script --}}
 
 {{-- Search Bottom Script --}}
