@@ -26,6 +26,27 @@ class HomeController extends \BaseController {
 		return View::make('login');
 	}
 
+    public function showBrowse()
+    {
+
+        $query = Location::with(['user', 'images']);
+
+        $query->whereHas('user', function($q) {
+            $q->where('role', 'host');
+        });
+
+        if (Input::has('radius')) {
+            $radius = Input::get('radius');
+
+            $query->distance(Auth::user()->location->latitude, Auth::user()->location->longitude, $radius);
+            $query->orderBy('distance');
+        }
+
+        
+        $locations = $query->get();
+        return View::make('browse')->with('locations', $locations);
+    }
+
 
 	public function showSearch()
 	{

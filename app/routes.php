@@ -45,16 +45,14 @@ Route::get('users/create-rover', 'UsersController@showCreateRover');
 
 Route::get('reservations/create/{hostId}', 'ReservationsController@create');
 
-
-
-Route::get('carousel', 'UsersController@carousel');
-
-
-
 Route::get('index', 'HomeController@index');
 
 Route::get('search', 'HomeController@showSearch');
 Route::post('search', 'HomeController@showSearch');
+
+// Routes for Browse - test only 
+Route::get('browse', 'HomeController@showBrowse');
+Route::post('browse', 'HomeController@showBrowse');
 
 Route::get('searchTest', function() {
 
