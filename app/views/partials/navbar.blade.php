@@ -8,7 +8,7 @@
 					<ul>
 						<li class="logo-wrapper"><a href="/index"><header>Rover Sleepover</header></a></li>
 						<li>
-							<a href="/search">Browse Hosts</a>
+							<a href="/browse">Browse Hosts</a>
 						</li>
 						<li>
 							<a href="/users/create-rover">Sign Up Rover!</a>

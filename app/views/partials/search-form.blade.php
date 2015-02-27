@@ -4,7 +4,7 @@
             
                <h2><i class="fa fa-lg fa-search"></i>  Find a Host:</h2>
 
-                <form method="GET" action="{{{ action('HomeController@showSearch') }}}">
+                <form method="GET" action="{{{ action('HomeController@showBrowse') }}}">
 
                     {{-- <div class="form-group">
                         <p><strong>Check In: </strong></p>
