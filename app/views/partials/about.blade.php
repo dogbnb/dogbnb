@@ -7,9 +7,11 @@
 					<!-- Testimonial -->
 					<div class="testimonial col-md-4 col-sm-6">
 						<!-- Author Photo -->
+                    <a href="http://alumni.codeup.com/students/88">
 						<div class="author-photo">
 							<img class="img-responsive" src="theme/img/mike.jpg" alt="Author 1">
 						</div>
+                    </a>
 						<div class="testimonial-bubble">
 							<blockquote>
 								<!-- Quote -->
@@ -26,9 +28,11 @@
                     </div>
                     <!-- End Testimonial -->
                     <div class="testimonial col-md-4 col-sm-6">
-						<div class="author-photo">
+                        <a href="http://alumni.codeup.com/students/91">
+						  <div class="author-photo">
 							<img class="img-responsive" src="theme/img/steph.jpg" alt="Author 2">
-						</div>
+						  </div>
+                        </a>
 						<div class="testimonial-bubble">
 							<blockquote>
 								<p class="quote">
@@ -42,9 +46,11 @@
                         </div>
                     </div>
 					<div class="testimonial col-md-4 col-sm-6">
-						<div class="author-photo">
+                        <a href="http://alumni.codeup.com/students/81">
+						  <div class="author-photo">
 							<img class="img-responsive" src="theme/img/calvin.jpg" alt="Author 3">
-						</div>
+						  </div>
+                        </a>
 						<div class="testimonial-bubble">
 							<blockquote>
 								<p class="quote">
