@@ -11,12 +11,6 @@
 |
 */
 
-Route::get('/testLogin', function() {
-    if (Auth::check()) {
-        dd(Auth::id());
-    }
-});
-
 Route::get('/map', function()
 {
     $locations = Location::whereHas('user', function($q) {
@@ -32,12 +26,6 @@ Route::get('login', 'HomeController@showLogin');
 Route::post('login', 'HomeController@doLogin');
 
 Route::get('logout', 'HomeController@doLogout');
-
-Route::get('distance-finder', 'HomeController@distanceFinder');
-
-Route::get('upload', 'HomeController@showupload');
-Route::post('upload', 'UsersController@photoUpload');
-
 
 Route::get('users/create-host', 'UsersController@showCreateHost');
 
@@ -75,11 +63,6 @@ Route::get('searchTest', function() {
     //           ->get();
 
 });
-
-Route::get('owner-profile', 'HomeController@showOwnerProfile');
-
-// Route::get('host-profile', 'usersController@show');
-
 
 
 
