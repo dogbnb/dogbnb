@@ -1892,10 +1892,10 @@ span.color-red {
 --------------------------------------------------------------------------*/
 .dog-banner {
   display: block;
-  width: 100%;
-/*  height: 500px;*/
-  background-image: url("/theme/img/dog2.jpg");
-  background-size: cover;
+/*  width: 100%;
+  height: 400px;*/
+/*  background-image: url("/theme/img/dog2.jpg");*/
+/*  background-size: cover;*/
   
 }
 

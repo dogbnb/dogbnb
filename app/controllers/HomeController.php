@@ -48,26 +48,26 @@ class HomeController extends \BaseController {
     }
 
 
-	public function showSearch()
-	{
+	// public function showSearch()
+	// {
 
-        $query = Location::with(['user', 'images']);
+ //        $query = Location::with(['user', 'images']);
 
-        $query->whereHas('user', function($q) {
-            $q->where('role', 'host');
-        });
+ //        $query->whereHas('user', function($q) {
+ //            $q->where('role', 'host');
+ //        });
 
-        if (Input::has('radius')) {
-            $radius = Input::get('radius');
+ //        if (Input::has('radius')) {
+ //            $radius = Input::get('radius');
 
-            $query->distance(Auth::user()->location->latitude, Auth::user()->location->longitude, $radius);
-            $query->orderBy('distance');
-        }
+ //            $query->distance(Auth::user()->location->latitude, Auth::user()->location->longitude, $radius);
+ //            $query->orderBy('distance');
+ //        }
 
         
-        $locations = $query->get();
-        return View::make('search')->with('locations', $locations);
-	}
+ //        $locations = $query->get();
+ //        return View::make('search')->with('locations', $locations);
+	// }
 
 
 	public function doLogin(){
